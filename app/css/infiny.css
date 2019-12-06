@@ -11569,6 +11569,12 @@ html {
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased; }
 
+.header-wrapper {
+  background-image: url("../images/image2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .brand-centered {
   padding: 50px; }
   .brand-centered .navbar-brand {
@@ -11576,11 +11582,39 @@ html {
 
 .menu-toggler {
   background: #f7941d;
-  padding: 15px; }
+  padding: 10px;
+  border-radius: 0;
+  margin: 1em 0 0 1em;
+  cursor: pointer; }
   .menu-toggler .hamburger {
-    font-size: 18px; }
+    font-size: 12px; }
 
-.navigation .menu-container {
-  padding: 10px; }
-  .navigation .menu-container .nav-item {
-    list-style: none; }
+.navigation {
+  width: 0%;
+  overflow-x: hidden;
+  height: 40vh;
+  z-index: 1;
+  position: fixed;
+  background: white;
+  transition: 0.8s;
+  display: block; }
+  .navigation .menu-content .close {
+    font-size: 40px;
+    color: #000;
+    transition: color 0.3s ease-in;
+    cursor: pointer; }
+    .navigation .menu-content .close:hover {
+      color: #f7941d; }
+  .navigation .nav-item {
+    margin-top: 25px;
+    list-style: none;
+    line-height: 5px; }
+    .navigation .nav-item .nav-link {
+      color: #f7941d;
+      text-decoration: none;
+      font-size: 40px;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      transition: color 0.3s ease-in; }
+      .navigation .nav-item .nav-link:hover {
+        color: #c56e05; }

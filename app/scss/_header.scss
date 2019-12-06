@@ -6,16 +6,48 @@
 }
 
 .menu-toggler {
-  background: #f7941d;
-  padding: 15px;
+  background: rgb(247, 148, 29);
+  padding: 10px;
+  border-radius: 0;
+  margin: 1em 0 0 1em;
+  cursor: pointer;
   .hamburger {
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
-.navigation .menu-container {
-  padding: 10px;
+.navigation {
+  width: 0%;
+  overflow-x: hidden;
+  height: 40vh;
+  z-index: 1;
+  position: fixed;
+  background: rgb(255, 255, 255);
+  transition: 0.8s;
+  display: block;
+  .menu-content .close {
+    font-size: 40px;
+    color: #000;
+    transition: color 0.3s ease-in;
+    cursor: pointer;
+    &:hover {
+      color: rgb(247, 148, 29);
+    }
+  }
   .nav-item {
+    margin-top: 25px;
     list-style: none;
+    line-height: 5px;
+    .nav-link {
+      color: rgb(247, 148, 29);
+      text-decoration: none;
+      font-size: 40px;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      transition: color 0.3s ease-in;
+      &:hover {
+        color: rgb(197, 110, 5);
+      }
+    }
   }
 }
