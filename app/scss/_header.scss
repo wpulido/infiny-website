@@ -1,30 +1,101 @@
-.brand-centered {
-  padding: 50px;
-  .navbar-brand {
-    font-size: 34px;
+.brand-content {
+  position: sticky;
+  .brand-centered {
+    padding: 10px;
+    .navbar-brand {
+      font-size: 34px;
+      .logo {
+        width: 250px;
+        height: auto;
+      }
+    }
+  }
+
+  .menu-toggler {
+    position: relative;
+    background: rgb(247, 148, 29);
+    border-radius: 0;
+    margin: 0 0 0 1em;
+    cursor: pointer;
+    .hamburger {
+      font-size: 12px;
+    }
+  }
+
+  .heading-text {
+    margin-top: 30px;
+    .heading {
+      font-weight: 700;
+      font-size: 2.5rem;
+      .comillas {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 15rem;
+        color: #e0e2e3;
+      }
+    }
+    .sub-heading {
+      margin-top: 30px;
+      font-weight: 600;
+      font-size: 0.8em;
+    }
   }
 }
 
-.menu-toggler {
-  background: rgb(247, 148, 29);
-  padding: 10px;
-  border-radius: 0;
-  margin: 1em 0 0 1em;
+.scroll-hint {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 11px);
+  height: 36px;
+  width: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  box-sizing: border-box;
+  z-index: 10;
   cursor: pointer;
-  .hamburger {
-    font-size: 12px;
+  &#scrollBottom {
+    border-color: rgba(28, 43, 71, 0.5);
+    // transform: rotate(180deg);
+    .hint-dot {
+      background: rgb(28, 43, 71);
+    }
+  }
+  .hint-dot {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    animation: scroll-hint-animation 2s linear infinite;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
   }
 }
 
 .navigation {
   width: 0%;
   overflow-x: hidden;
-  height: 40vh;
-  z-index: 1;
+  height: 60vh;
+  z-index: 10;
   position: fixed;
   background: rgb(255, 255, 255);
   transition: 0.8s;
   display: block;
+  .logo-right {
+    .menu-logo {
+      width: 300px;
+      height: auto;
+    }
+  }
   .menu-content .close {
     font-size: 40px;
     color: #000;
@@ -49,5 +120,15 @@
         color: rgb(197, 110, 5);
       }
     }
+  }
+}
+
+@keyframes scroll-hint-animation {
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(14px);
   }
 }

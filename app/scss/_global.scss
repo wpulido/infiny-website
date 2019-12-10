@@ -3,18 +3,27 @@
 html {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   body {
     font-family: "Poppins", sans-serif;
+    color: #696969;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
   }
 }
 
+a {
+  text-decoration-line: none !important;
+}
+
 .header-wrapper {
-  background-image: url("../images/image2.png");
-  background-position: center center;
+  background-image: url("../images/image1.png");
+  background-position: 0 100px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
+  max-height: 100vh;
+  height: 100vh;
+  position: relative;
 }

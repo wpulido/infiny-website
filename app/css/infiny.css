@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900&display=swap");
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -11561,43 +11561,105 @@ readers do not read off random characters that represent icons */
 
 html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  scroll-behavior: smooth; }
   html body {
     font-family: "Poppins", sans-serif;
+    color: #696969;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased; }
+    -moz-osx-font-smoothing: grayscale; }
+
+a {
+  text-decoration-line: none !important; }
 
 .header-wrapper {
-  background-image: url("../images/image2.png");
-  background-position: center center;
+  background-image: url("../images/image1.png");
+  background-position: 0 100px;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-attachment: fixed;
+  background-size: cover;
+  max-height: 100vh;
+  height: 100vh;
+  position: relative; }
 
-.brand-centered {
-  padding: 50px; }
-  .brand-centered .navbar-brand {
-    font-size: 34px; }
+.brand-content {
+  position: sticky; }
+  .brand-content .brand-centered {
+    padding: 10px; }
+    .brand-content .brand-centered .navbar-brand {
+      font-size: 34px; }
+      .brand-content .brand-centered .navbar-brand .logo {
+        width: 250px;
+        height: auto; }
+  .brand-content .menu-toggler {
+    position: relative;
+    background: #f7941d;
+    border-radius: 0;
+    margin: 0 0 0 1em;
+    cursor: pointer; }
+    .brand-content .menu-toggler .hamburger {
+      font-size: 12px; }
+  .brand-content .heading-text {
+    margin-top: 30px; }
+    .brand-content .heading-text .heading {
+      font-weight: 700;
+      font-size: 2.5rem; }
+      .brand-content .heading-text .heading .comillas {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 15rem;
+        color: #e0e2e3; }
+    .brand-content .heading-text .sub-heading {
+      margin-top: 30px;
+      font-weight: 600;
+      font-size: 0.8em; }
 
-.menu-toggler {
-  background: #f7941d;
-  padding: 10px;
-  border-radius: 0;
-  margin: 1em 0 0 1em;
+.scroll-hint {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 11px);
+  height: 36px;
+  width: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  box-sizing: border-box;
+  z-index: 10;
   cursor: pointer; }
-  .menu-toggler .hamburger {
-    font-size: 12px; }
+  .scroll-hint#scrollBottom {
+    border-color: rgba(28, 43, 71, 0.5); }
+    .scroll-hint#scrollBottom .hint-dot {
+      background: #1c2b47; }
+  .scroll-hint .hint-dot {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    animation: scroll-hint-animation 2s linear infinite; }
+  .scroll-hint a {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%; }
 
 .navigation {
   width: 0%;
   overflow-x: hidden;
-  height: 40vh;
-  z-index: 1;
+  height: 60vh;
+  z-index: 10;
   position: fixed;
   background: white;
   transition: 0.8s;
   display: block; }
+  .navigation .logo-right .menu-logo {
+    width: 300px;
+    height: auto; }
   .navigation .menu-content .close {
     font-size: 40px;
     color: #000;
@@ -11618,3 +11680,60 @@ html {
       transition: color 0.3s ease-in; }
       .navigation .nav-item .nav-link:hover {
         color: #c56e05; }
+
+@keyframes scroll-hint-animation {
+  60% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0;
+    transform: translateY(14px); } }
+
+.infiny-footer {
+  background-color: #f7941d;
+  padding: 30px; }
+  .infiny-footer .social-media {
+    font-size: 18px;
+    padding-left: 40px; }
+    .infiny-footer .social-media a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease-in; }
+      .infiny-footer .social-media a:hover {
+        color: #4c94f1; }
+    .infiny-footer .social-media .facebook {
+      margin-left: 80px; }
+  .infiny-footer .contact .contact-title {
+    font-size: 18px;
+    margin-left: 25px; }
+  .infiny-footer .contact .contact-phone {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in; }
+    .infiny-footer .contact .contact-phone:hover {
+      color: #4c94f1; }
+  .infiny-footer .form {
+    text-align: center; }
+  .infiny-footer form .form-group .form-control {
+    width: 90%;
+    margin-left: 20px;
+    background: rgba(139, 126, 126, 0.3);
+    border: 0; }
+    .infiny-footer form .form-group .form-control::placeholder {
+      color: white;
+      padding-left: 20px; }
+  .infiny-footer form .form-group small {
+    font-size: 12px;
+    margin-left: 20px; }
+  .infiny-footer .footer-text p {
+    font-size: 14px;
+    color: white; }
+    .infiny-footer .footer-text p .impulsa-link {
+      color: white;
+      transition: color 0.3s ease-in; }
+      .infiny-footer .footer-text p .impulsa-link:hover {
+        color: #4c94f1; }
+  .infiny-footer .footer-text hr {
+    color: white; }
+  .infiny-footer hr {
+    color: #fff; }

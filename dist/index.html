@@ -2,7 +2,10 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Infiny</title>
 
@@ -11,11 +14,26 @@
     <link rel="stylesheet" href="css/infiny.css" />
   </head>
   <body>
-    <div class="header-wrapper">
+    <header class="header-wrapper">
       <div class="navigation navEffects" id="navEffects">
         <label for="menuToggle"></label>
+        <div class="row">
+          <div class="logo-right ml-auto">
+            <img
+              src="./images/infiny-logo.png"
+              alt="Infiny"
+              class="menu-logo"
+            />
+          </div>
+        </div>
         <div class="menu-content mx-5">
-          <a href="javascript:void(0)" id="close" class="close">&times;</a>
+          <a
+            href="javascript:void(0)"
+            id="close"
+            class="close"
+            onclick="closeNav();"
+            >&times;</a
+          >
           <div class="row">
             <div class="col-md-6">
               <ul>
@@ -44,29 +62,104 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="brand-content">
         <div class="brand-centered text-center">
-          <a class="navbar-brand" href="index.html">Infiny</a>
+          <a class="navbar-brand" href="index.html"
+            ><img class="logo" src="./images/infiny-logo.png" alt="Infiny"
+          /></a>
         </div>
         <div class="toggler text-center">
-          <button class="btn menu-toggler shadow">
+          <a class="btn menu-toggler shadow" onclick="openNav();">
             <span><i class="fas fa-bars hamburger open" id="open"></i></span>
-          </button>
+          </a>
+        </div>
+
+        <div class="heading-text text-center">
+          <h2 class="heading"><span class="comillas">"</span>
+            Una infinidad de oportunidades <span class="comillas">"</span>
+          </h2> 
+          <p class="sub-heading">
+            La ingeniería continuará siempre <br />
+            transformando y mejorando la sociedad.
+          </p>
         </div>
       </div>
 
-      <div class="heading-text text-center">
-        <h2 class="heading">Una infinidad de oportunidades</h2>
-        <p class="sub-heading">
-          La ingeniería continuará siempre <br />
-          transformando y mejorando la sociedad.
-        </p>
+      <div class="scroll-hint" id="scrollTop">
+        <div class="hint-dot"></div>
       </div>
-    </div>
+    </header>
+
+    <footer class="infiny-footer">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4 text-center">
+          <div class="row">
+            <div class="social-media">
+              <a href="https://instagram.com/infiny.ve" class=instagram">
+                <span><i class="fab fa-instagram"></i></span> @infiny.ve
+              </a>
+              <a href="#" class="facebook">
+                <span><i class="fab fa-facebook"></i></span> Infiny Venezuela
+              </a>
+            </div>
+          </div>
+          <div class="row">
+
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="contact">
+            <p class="contact-title mb-3">Atención al cliente</p>
+            <a class="contact-phone" href="tel:+582120005555"><i class="fas fa-phone-alt"></i> +58 212 000 5555</a>
+            <br>
+            <br>
+            <a class="contact-phone" href="tel:+584145550000"><i class="fab fa-whatsapp"></i> +58 212 555 0000</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <p class="form">Recibe información importante para tu<br> 
+            proceso de compra de vivienda nueva</p>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-sm" id="infinyName" aria-describedby="nameHelp" placeholder="Nombre y apellido(*)" required>
+                <small id="nameHelp" class="form-text">Ingresa tu nombre</small>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control form-control-sm" id="infinyEmail" placeholder="Correo(*)" aria-describedby="emailHelp" required >
+                <small id="emailHelp" class="form-text">No compartiremos tu dirección de correo con nadie.</small>
+              </div>
+              <div class="form-group">
+                <textarea name="infinyText" placeholder="Mensaje (opcional)" id="infinyText" cols="47" rows="6" class="form-control form-control-sm" aria-describedby="textHelp"></textarea>
+                <small id="textHelp" class="form-text">Déjanos un mensaje si lo deseas</small>
+              </div>
+            </form>
+
+        </div>
+      </div>
+
+      <div class="footer-text mt-5">
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eos
+          facere assumenda incidunt accusantium ipsam voluptate, <br> sint ut
+          consequatur quis officiis adipisci, ullam sit ipsum quae recusandae
+          minus quos nobis.
+        </p>
+        <hr class="pt-3" />
+        <div class="col-md-12 d-flex flex-row justify-content-center">
+          <col-md-6>
+            <p class="text-center">&copy; <span id="year"></span> - Inversiones Infiny</p>
+          </col-md-6>
+          <col-md-6>
+            <p class="text-center ml-5">Desarrollo: <a class="impulsa-link" href="https://somosimpulsa.com">Impulsa Creativos</a></p>
+          </col-md-6>
+        </div>  
+      </div>
+    </footer>
   </body>
 
   <script src="./vendor/font-awesome/fontawesome-free/js/all.min.js"></script>
   <script src="./vendor/jquery/jquery.min.js"></script>
   <script src="./vendor/popper/popper.min.js"></script>
   <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./js/infiny.js"></script>
 </html>
