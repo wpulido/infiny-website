@@ -11582,71 +11582,70 @@ a {
   max-height: 100vh;
   height: 100vh;
   position: relative; }
-
-.brand-content {
-  position: sticky; }
-  .brand-content .brand-centered {
-    padding: 10px; }
-    .brand-content .brand-centered .navbar-brand {
-      font-size: 34px; }
-      .brand-content .brand-centered .navbar-brand .logo {
-        width: 250px;
-        height: auto; }
-  .brand-content .menu-toggler {
-    position: relative;
-    background: #f7941d;
-    border-radius: 0;
-    margin: 0 0 0 1em;
-    cursor: pointer; }
-    .brand-content .menu-toggler .hamburger {
-      font-size: 12px; }
-  .brand-content .heading-text {
-    margin-top: 30px; }
-    .brand-content .heading-text .heading {
-      font-weight: 700;
-      font-size: 2.5rem; }
-      .brand-content .heading-text .heading .comillas {
-        font-family: "Poppins", sans-serif;
+  .header-wrapper .brand-content {
+    position: sticky; }
+    .header-wrapper .brand-content .brand-centered {
+      padding: 10px; }
+      .header-wrapper .brand-content .brand-centered .navbar-brand {
+        font-size: 34px; }
+        .header-wrapper .brand-content .brand-centered .navbar-brand .logo {
+          width: 250px;
+          height: auto; }
+    .header-wrapper .brand-content .menu-toggler {
+      position: relative;
+      background: #f7941d;
+      border-radius: 0;
+      margin: 0 0 0 1em;
+      cursor: pointer; }
+      .header-wrapper .brand-content .menu-toggler .hamburger {
+        font-size: 12px; }
+    .header-wrapper .brand-content .heading-text {
+      margin-top: 30px; }
+      .header-wrapper .brand-content .heading-text .heading {
         font-weight: 700;
-        font-size: 15rem;
-        color: #e0e2e3; }
-    .brand-content .heading-text .sub-heading {
-      margin-top: 30px;
-      font-weight: 600;
-      font-size: 0.8em; }
-
-.scroll-hint {
-  position: absolute;
-  bottom: 20px;
-  left: calc(50% - 11px);
-  height: 36px;
-  width: 22px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 12px;
-  box-sizing: border-box;
-  z-index: 10;
-  cursor: pointer; }
-  .scroll-hint#scrollBottom {
-    border-color: rgba(28, 43, 71, 0.5); }
-    .scroll-hint#scrollBottom .hint-dot {
-      background: #1c2b47; }
-  .scroll-hint .hint-dot {
+        font-size: 2.5rem; }
+        .header-wrapper .brand-content .heading-text .heading .comillas {
+          font-family: "Poppins", sans-serif;
+          font-weight: 700;
+          font-size: 15rem;
+          color: #e0e2e3;
+          display: none; }
+      .header-wrapper .brand-content .heading-text .sub-heading {
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 0.8em; }
+  .header-wrapper .scroll-hint {
     position: absolute;
-    top: 5px;
-    left: 5px;
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    background: white;
-    opacity: 0;
-    pointer-events: none;
-    animation: scroll-hint-animation 2s linear infinite; }
-  .scroll-hint a {
-    position: absolute;
-    top: 0;
-    display: block;
-    height: 100%;
-    width: 100%; }
+    bottom: 20px;
+    left: calc(50% - 11px);
+    height: 36px;
+    width: 22px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    box-sizing: border-box;
+    z-index: 10;
+    cursor: pointer; }
+    .header-wrapper .scroll-hint#scrollBottom {
+      border-color: rgba(28, 43, 71, 0.5); }
+      .header-wrapper .scroll-hint#scrollBottom .hint-dot {
+        background: #1c2b47; }
+    .header-wrapper .scroll-hint .hint-dot {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background: white;
+      opacity: 0;
+      pointer-events: none;
+      animation: scroll-hint-animation 2s linear infinite; }
+    .header-wrapper .scroll-hint a {
+      position: absolute;
+      top: 0;
+      display: block;
+      height: 100%;
+      width: 100%; }
 
 .navigation {
   width: 0%;
@@ -11737,3 +11736,16 @@ a {
     color: white; }
   .infiny-footer hr {
     color: #fff; }
+
+.intro-container {
+  padding: 50px;
+  background: #f7941d;
+  height: 270px;
+  margin-bottom: 50px;
+  position: relative; }
+  .intro-container .intro-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    margin-left: 100px; }
+  .intro-container .infiny-pattern {
+    position: absolute; }
