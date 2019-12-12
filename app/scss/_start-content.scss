@@ -1,15 +1,30 @@
 .intro-container {
   padding: 50px;
   background: rgb(247, 148, 29);
-  height: 270px;
+  height: 300px;
+  width: 50%;
   margin-bottom: 50px;
   position: relative;
   .intro-text {
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    margin-left: 100px;
+    font-weight: 600;
+    margin-left: 120px;
+    margin-top: 20px;
+    font-size: 1.64rem;
+    color: rgb(255, 217, 182);
   }
   .infiny-pattern {
     position: absolute;
+    width: 15%;
+    height: auto;
+    top: 20px;
+    left: 10px;
+  }
+  .infiny-comilla {
+    position: absolute;
+    width: 12%;
+    height: auto;
+    left: 75px;
+    top: 60px;
   }
 }

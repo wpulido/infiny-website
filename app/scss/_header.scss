@@ -58,13 +58,13 @@
     left: calc(50% - 11px);
     height: 36px;
     width: 22px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(247, 148, 29, 0.5);
     border-radius: 12px;
     box-sizing: border-box;
     z-index: 10;
     cursor: pointer;
     &#scrollBottom {
-      border-color: rgba(28, 43, 71, 0.5);
+      border-color: rgba(0, 0, 20, 0.5);
       // transform: rotate(180deg);
       .hint-dot {
         background: rgb(28, 43, 71);

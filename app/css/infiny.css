@@ -11562,7 +11562,8 @@ readers do not read off random characters that represent icons */
 html {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
   html body {
     font-family: "Poppins", sans-serif;
     color: #696969;
@@ -11620,13 +11621,13 @@ a {
     left: calc(50% - 11px);
     height: 36px;
     width: 22px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(247, 148, 29, 0.5);
     border-radius: 12px;
     box-sizing: border-box;
     z-index: 10;
     cursor: pointer; }
     .header-wrapper .scroll-hint#scrollBottom {
-      border-color: rgba(28, 43, 71, 0.5); }
+      border-color: rgba(0, 0, 20, 0.5); }
       .header-wrapper .scroll-hint#scrollBottom .hint-dot {
         background: #1c2b47; }
     .header-wrapper .scroll-hint .hint-dot {
@@ -11740,12 +11741,67 @@ a {
 .intro-container {
   padding: 50px;
   background: #f7941d;
-  height: 270px;
+  height: 300px;
+  width: 50%;
   margin-bottom: 50px;
   position: relative; }
   .intro-container .intro-text {
     font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    margin-left: 100px; }
+    font-weight: 600;
+    margin-left: 120px;
+    margin-top: 20px;
+    font-size: 1.64rem;
+    color: #ffd9b6; }
   .intro-container .infiny-pattern {
-    position: absolute; }
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 20px;
+    left: 10px; }
+  .intro-container .infiny-comilla {
+    position: absolute;
+    width: 12%;
+    height: auto;
+    left: 75px;
+    top: 60px; }
+
+.about-infiny .about-bg {
+  margin-top: -200px; }
+
+.about-infiny .about-heading {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #e53b25;
+  margin-top: -250px; }
+
+.about-infiny .infiny-container .infiny-iso {
+  max-width: 280px;
+  width: 100%;
+  margin-top: 20px; }
+
+.about-infiny .about-content {
+  margin-top: -170px;
+  margin-right: 40px;
+  padding: 40px;
+  line-height: 25px;
+  font-size: 15px;
+  text-align: justify; }
+
+.infiny-program {
+  background-color: #f1f1f1; }
+  .infiny-program .program-heading {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: 45px;
+    color: #f7941d; }
+  .infiny-program .program-quote {
+    font-size: 15px;
+    margin-bottom: 5%; }
+  .infiny-program .program-reel .infiny-btn {
+    background-color: #f7941d;
+    border-radius: 0;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e53b25;
+    padding-left: 50px;
+    padding-right: 50px; }
