@@ -9,10 +9,16 @@
     color: rgb(229, 59, 37);
     margin-top: -250px;
   }
-  .infiny-container .infiny-iso {
-    max-width: 280px;
-    width: 100%;
-    margin-top: 20px;
+  .infiny-container {
+    position: relative;
+    .infiny-iso {
+      max-width: 280px;
+      width: 100%;
+      margin-top: 20px;
+      position: absolute;
+      top: -18px;
+      left: 140px;
+    }
   }
   .about-content {
     margin-top: -170px;

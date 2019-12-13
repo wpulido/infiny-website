@@ -11774,10 +11774,15 @@ a {
   color: #e53b25;
   margin-top: -250px; }
 
-.about-infiny .infiny-container .infiny-iso {
-  max-width: 280px;
-  width: 100%;
-  margin-top: 20px; }
+.about-infiny .infiny-container {
+  position: relative; }
+  .about-infiny .infiny-container .infiny-iso {
+    max-width: 280px;
+    width: 100%;
+    margin-top: 20px;
+    position: absolute;
+    top: -18px;
+    left: 140px; }
 
 .about-infiny .about-content {
   margin-top: -170px;
@@ -11795,9 +11800,6 @@ a {
     font-weight: 600;
     font-size: 45px;
     color: #f7941d; }
-  .infiny-program .program-quote {
-    font-size: 15px;
-    margin-bottom: 5%; }
   .infiny-program .program-reel .infiny-btn {
     background-color: #f7941d;
     border-radius: 0;
@@ -11805,3 +11807,77 @@ a {
     border-bottom: 3px solid #e53b25;
     padding-left: 50px;
     padding-right: 50px; }
+
+.infiny-join {
+  background-color: #f1f1f1; }
+  .infiny-join .join-heading {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: 45px;
+    position: relative;
+    color: #f7941d; }
+  .infiny-join .join-quote {
+    font-size: 15px;
+    margin-bottom: 5%; }
+  .infiny-join #infinyCarousel .carousel-inner .carousel-item {
+    max-height: 800px;
+    height: 100%;
+    width: 100%; }
+    .infiny-join #infinyCarousel .carousel-inner .carousel-item .infiny-item {
+      max-height: 800px;
+      height: 100%; }
+  .infiny-join #infinyCarousel .carousel-control-prev {
+    font-size: 60px;
+    color: #d4d3d3;
+    opacity: 0.7; }
+  .infiny-join #infinyCarousel .carousel-control-next {
+    font-size: 60px;
+    color: #d4d3d3;
+    opacity: 0.7; }
+
+.infiny-faqs .infiny-faqs-title {
+  padding: 70px;
+  background-color: #e53b25;
+  width: 50%;
+  margin-top: -100px; }
+  .infiny-faqs .infiny-faqs-title .infiny-faqs-heading {
+    color: #ffd9b6;
+    font-weight: 600;
+    text-align: center;
+    font-size: 45px; }
+
+.infiny-faqs .faqs-wrapper {
+  margin-left: 130px; }
+
+.infiny-faqs .infiny-faq-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative; }
+  .infiny-faqs .infiny-faq-container .infiny-icon {
+    position: absolute;
+    top: 25px;
+    left: -80px;
+    font-size: 50px;
+    color: #e53b25; }
+  .infiny-faqs .infiny-faq-container .infiny-faq-question {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 25px;
+    padding-top: 20px;
+    color: #1f1d3a; }
+  .infiny-faqs .infiny-faq-container .infiny-faq-answer {
+    color: dimgray;
+    margin-top: 40px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    line-height: 25px; }
+
+.infiny-faqs .faqs-btn {
+  background-color: #f7941d;
+  border-radius: 0;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #e53b25;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center; }
