@@ -11861,7 +11861,7 @@ a {
     font-size: 50px;
     color: #e53b25; }
   .infiny-faqs .infiny-faq-container .infiny-faq-question {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 800;
     line-height: 25px;
     padding-top: 20px;
@@ -11869,15 +11869,46 @@ a {
   .infiny-faqs .infiny-faq-container .infiny-faq-answer {
     color: dimgray;
     margin-top: 40px;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 0.3px;
     line-height: 25px; }
 
-.infiny-faqs .faqs-btn {
+.infiny-faqs .faqs-ask {
+  padding-top: 50px;
+  padding-bottom: 150px; }
+  .infiny-faqs .faqs-ask .faqs-btn {
+    background-color: #f7941d;
+    border-radius: 0;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e53b25;
+    padding-left: 50px;
+    padding-right: 50px; }
+
+.infiny-map .infiny-map-title {
+  padding: 25px;
   background-color: #f7941d;
-  border-radius: 0;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #e53b25;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center; }
+  width: 70%;
+  margin-top: -50px;
+  z-index: 10;
+  display: inline-block; }
+  .infiny-map .infiny-map-title .infiny-map-heading {
+    color: #ffd9b6;
+    font-weight: 600;
+    font-size: 45px; }
+  .infiny-map .infiny-map-title .infiny-map-subheading {
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 10px;
+    color: #ffd9b6;
+    line-height: 30px; }
+
+.infiny-map .mapouter {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  width: 100%; }
+  .infiny-map .mapouter .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%; }

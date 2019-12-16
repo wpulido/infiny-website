@@ -1,0 +1,34 @@
+.infiny-map {
+  .infiny-map-title {
+    padding: 25px;
+    background-color: rgb(247, 148, 29);
+    width: 70%;
+    margin-top: -50px;
+    z-index: 10;
+    display: inline-block;
+    .infiny-map-heading {
+      color: rgb(255, 217, 182);
+      font-weight: 600;
+      font-size: 45px;
+    }
+    .infiny-map-subheading {
+      font-size: 15px;
+      font-weight: 300;
+      padding-top: 10px;
+      color: rgb(255, 217, 182);
+      line-height: 30px;
+    }
+  }
+  .mapouter {
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 500px;
+      width: 100%;
+    }
+  }
+}
