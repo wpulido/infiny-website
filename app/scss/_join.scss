@@ -13,6 +13,22 @@
     margin-bottom: 5%;
   }
   #infinyCarousel {
+    .infiny-indicators {
+      bottom: -60px;
+      left: 670px;
+      justify-content: space-evenly;
+      li {
+        background-color: rgb(229, 59, 37);
+        opacity: 0.5;
+        height: 12px;
+        width: 12px;
+        border-radius: 100%;
+      }
+      .active {
+        background-color: #696969;
+        opacity: 1;
+      }
+    }
     .carousel-inner {
       .carousel-item {
         max-height: 800px;

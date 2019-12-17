@@ -5,6 +5,7 @@ const uglify = require("gulp-uglify");
 const gulpIf = require("gulp-if");
 const cssnano = require("gulp-cssnano");
 const imagemin = require("gulp-imagemin");
+const autoprefixer = require("gulp-autoprefixer");
 const cache = require("gulp-cache");
 const del = require("del");
 const browserSync = require("browser-sync").create();
@@ -82,7 +83,7 @@ function browserSyncReload(done) {
 
 // Minifier & Uglifier
 function minifier(done) {
-  src("app/**/*.+(html|php)")
+  src("app/*.+(html|php)")
     .pipe(useref())
     .pipe(
       gulpIf(
@@ -92,6 +93,12 @@ function minifier(done) {
         })
       )
         .pipe(gulpIf("*.css", cssnano()))
+        .pipe(
+          autoprefixer({
+            browsers: ["last 2 versions"],
+            cascade: false
+          })
+        )
         .pipe(dest("dist"))
     );
   done();

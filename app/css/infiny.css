@@ -11597,24 +11597,37 @@ a {
       background: #f7941d;
       border-radius: 0;
       margin: 0 0 0 1em;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: background 0.3s ease-in; }
       .header-wrapper .brand-content .menu-toggler .hamburger {
-        font-size: 12px; }
+        font-size: 15px;
+        color: #ffd9b6; }
+      .header-wrapper .brand-content .menu-toggler:hover {
+        background: #ce7a14; }
     .header-wrapper .brand-content .heading-text {
-      margin-top: 30px; }
+      margin-top: 30px;
+      position: relative; }
+      .header-wrapper .brand-content .heading-text .comillas-abrir {
+        position: absolute;
+        max-width: 150px;
+        width: 100%;
+        top: -50px;
+        right: 1050px; }
+      .header-wrapper .brand-content .heading-text .comillas-cerrar {
+        position: absolute;
+        max-width: 150px;
+        width: 100%;
+        top: -50px;
+        left: 1050px; }
       .header-wrapper .brand-content .heading-text .heading {
-        font-weight: 700;
-        font-size: 2.5rem; }
-        .header-wrapper .brand-content .heading-text .heading .comillas {
-          font-family: "Poppins", sans-serif;
-          font-weight: 700;
-          font-size: 15rem;
-          color: #e0e2e3;
-          display: none; }
+        font-weight: 600;
+        font-size: 2.8rem;
+        letter-spacing: 0.5px; }
       .header-wrapper .brand-content .heading-text .sub-heading {
         margin-top: 30px;
-        font-weight: 600;
-        font-size: 0.8em; }
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 20px; }
   .header-wrapper .scroll-hint {
     position: absolute;
     bottom: 20px;
@@ -11649,16 +11662,17 @@ a {
       width: 100%; }
 
 .navigation {
-  width: 0%;
+  width: 100%;
   overflow-x: hidden;
   height: 60vh;
   z-index: 10;
-  position: fixed;
+  position: absolute;
+  right: -2000px;
   background: white;
   transition: 0.8s;
   display: block; }
   .navigation .logo-right .menu-logo {
-    width: 300px;
+    width: 250px;
     height: auto; }
   .navigation .menu-content .close {
     font-size: 40px;
@@ -11820,6 +11834,19 @@ a {
   .infiny-join .join-quote {
     font-size: 15px;
     margin-bottom: 5%; }
+  .infiny-join #infinyCarousel .infiny-indicators {
+    bottom: -60px;
+    left: 670px;
+    justify-content: space-evenly; }
+    .infiny-join #infinyCarousel .infiny-indicators li {
+      background-color: #e53b25;
+      opacity: 0.5;
+      height: 12px;
+      width: 12px;
+      border-radius: 100%; }
+    .infiny-join #infinyCarousel .infiny-indicators .active {
+      background-color: #696969;
+      opacity: 1; }
   .infiny-join #infinyCarousel .carousel-inner .carousel-item {
     max-height: 800px;
     height: 100%;
@@ -11887,10 +11914,11 @@ a {
 .infiny-map .infiny-map-title {
   padding: 25px;
   background-color: #f7941d;
-  width: 70%;
-  margin-top: -50px;
-  z-index: 10;
-  display: inline-block; }
+  width: 45%;
+  margin-top: -120px;
+  left: 380px;
+  position: absolute;
+  z-index: 30; }
   .infiny-map .infiny-map-title .infiny-map-heading {
     color: #ffd9b6;
     font-weight: 600;
