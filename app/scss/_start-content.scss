@@ -1,8 +1,8 @@
 .intro-container {
   padding: 50px;
-  background: rgb(247, 148, 29);
+  background: $primary;
   height: 300px;
-  width: 50%;
+  width: 55%;
   margin-bottom: 50px;
   position: relative;
   .intro-text {
@@ -11,20 +11,21 @@
     margin-left: 120px;
     margin-top: 20px;
     font-size: 1.64rem;
-    color: rgb(255, 217, 182);
+    padding-right: 20px;
+    color: $heading-fonts;
   }
   .infiny-pattern {
     position: absolute;
     width: 15%;
     height: auto;
-    top: 20px;
-    left: 10px;
+    top: 5px;
+    left: 0;
   }
   .infiny-comilla {
     position: absolute;
     width: 12%;
     height: auto;
-    left: 75px;
+    left: 60px;
     top: 60px;
   }
 }

@@ -22,17 +22,17 @@
 
     .menu-toggler {
       position: relative;
-      background: rgb(247, 148, 29);
+      background: $primary;
       border-radius: 0;
       margin: 0 0 0 1em;
       cursor: pointer;
       transition: background 0.3s ease-in;
       .hamburger {
         font-size: 15px;
-        color: rgb(255, 217, 182);
+        color: $fonts;
       }
       &:hover {
-        background: rgb(206, 122, 20);
+        background: $fonts-hover;
       }
     }
 
@@ -129,7 +129,7 @@
     transition: color 0.3s ease-in;
     cursor: pointer;
     &:hover {
-      color: rgb(247, 148, 29);
+      color: $primary;
     }
   }
   .nav-item {
@@ -137,14 +137,14 @@
     list-style: none;
     line-height: 5px;
     .nav-link {
-      color: rgb(247, 148, 29);
+      color: $primary;
       text-decoration: none;
       font-size: 40px;
       font-weight: 600;
       font-family: "Poppins", sans-serif;
       transition: color 0.3s ease-in;
       &:hover {
-        color: rgb(197, 110, 5);
+        color: $fonts-hover;
       }
     }
   }

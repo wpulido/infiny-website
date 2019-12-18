@@ -6,7 +6,7 @@
     font-weight: 600;
     font-size: 45px;
     position: relative;
-    color: rgb(247, 148, 29);
+    color: $primary;
   }
   .join-quote {
     font-size: 15px;
@@ -18,14 +18,14 @@
       left: 670px;
       justify-content: space-evenly;
       li {
-        background-color: rgb(229, 59, 37);
+        background-color: $fonts-hover;
         opacity: 0.5;
         height: 12px;
         width: 12px;
         border-radius: 100%;
       }
       .active {
-        background-color: #696969;
+        background-color: $fonts;
         opacity: 1;
       }
     }

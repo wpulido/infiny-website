@@ -11601,9 +11601,9 @@ a {
       transition: background 0.3s ease-in; }
       .header-wrapper .brand-content .menu-toggler .hamburger {
         font-size: 15px;
-        color: #ffd9b6; }
+        color: dimgray; }
       .header-wrapper .brand-content .menu-toggler:hover {
-        background: #ce7a14; }
+        background: #e53b25; }
     .header-wrapper .brand-content .heading-text {
       margin-top: 30px;
       position: relative; }
@@ -11693,7 +11693,7 @@ a {
       font-family: "Poppins", sans-serif;
       transition: color 0.3s ease-in; }
       .navigation .nav-item .nav-link:hover {
-        color: #c56e05; }
+        color: #e53b25; }
 
 @keyframes scroll-hint-animation {
   60% {
@@ -11756,7 +11756,7 @@ a {
   padding: 50px;
   background: #f7941d;
   height: 300px;
-  width: 50%;
+  width: 55%;
   margin-bottom: 50px;
   position: relative; }
   .intro-container .intro-text {
@@ -11765,18 +11765,19 @@ a {
     margin-left: 120px;
     margin-top: 20px;
     font-size: 1.64rem;
+    padding-right: 20px;
     color: #ffd9b6; }
   .intro-container .infiny-pattern {
     position: absolute;
     width: 15%;
     height: auto;
-    top: 20px;
-    left: 10px; }
+    top: 5px;
+    left: 0; }
   .intro-container .infiny-comilla {
     position: absolute;
     width: 12%;
     height: auto;
-    left: 75px;
+    left: 60px;
     top: 60px; }
 
 .about-infiny .about-bg {
@@ -11845,7 +11846,7 @@ a {
       width: 12px;
       border-radius: 100%; }
     .infiny-join #infinyCarousel .infiny-indicators .active {
-      background-color: #696969;
+      background-color: dimgray;
       opacity: 1; }
   .infiny-join #infinyCarousel .carousel-inner .carousel-item {
     max-height: 800px;
