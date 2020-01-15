@@ -9,13 +9,13 @@
     color: $primary;
   }
   .join-quote {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 5%;
   }
   #infinyCarousel {
     .infiny-indicators {
-      bottom: -60px;
-      left: 670px;
+      bottom: -70px;
+      left: 650px;
       justify-content: space-evenly;
       li {
         background-color: $fonts-hover;
@@ -33,7 +33,7 @@
       .carousel-item {
         max-height: 800px;
         height: 100%;
-        width: 100%;
+        width: 100vw;
         .infiny-item {
           max-height: 800px;
           height: 100%;

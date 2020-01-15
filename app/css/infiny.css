@@ -11762,26 +11762,29 @@ a {
   .intro-container .intro-text {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    margin-left: 120px;
-    margin-top: 20px;
-    font-size: 1.64rem;
+    margin-left: 160px;
+    margin-top: 10px;
+    font-size: 1.9rem;
     padding-right: 20px;
     color: #ffd9b6; }
   .intro-container .infiny-pattern {
     position: absolute;
-    width: 15%;
-    height: auto;
-    top: 5px;
-    left: 0; }
-  .intro-container .infiny-comilla {
-    position: absolute;
     width: 12%;
     height: auto;
-    left: 60px;
+    top: 15px;
+    left: 20px; }
+  .intro-container .infiny-comilla {
+    position: absolute;
+    width: 10%;
+    height: auto;
+    left: 90px;
     top: 60px; }
 
 .about-infiny .about-bg {
-  margin-top: -200px; }
+  margin-top: -195px;
+  width: 100vw;
+  max-height: 950px;
+  height: 100%; }
 
 .about-infiny .about-heading {
   font-weight: 700;
@@ -11800,11 +11803,11 @@ a {
     left: 140px; }
 
 .about-infiny .about-content {
-  margin-top: -170px;
+  margin-top: -145px;
   margin-right: 40px;
   padding: 40px;
   line-height: 25px;
-  font-size: 15px;
+  font-size: 16px;
   text-align: justify; }
 
 .infiny-program {
@@ -11833,11 +11836,11 @@ a {
     position: relative;
     color: #f7941d; }
   .infiny-join .join-quote {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 5%; }
   .infiny-join #infinyCarousel .infiny-indicators {
-    bottom: -60px;
-    left: 670px;
+    bottom: -70px;
+    left: 650px;
     justify-content: space-evenly; }
     .infiny-join #infinyCarousel .infiny-indicators li {
       background-color: #e53b25;
@@ -11851,7 +11854,7 @@ a {
   .infiny-join #infinyCarousel .carousel-inner .carousel-item {
     max-height: 800px;
     height: 100%;
-    width: 100%; }
+    width: 100vw; }
     .infiny-join #infinyCarousel .carousel-inner .carousel-item .infiny-item {
       max-height: 800px;
       height: 100%; }
@@ -11868,7 +11871,8 @@ a {
   padding: 70px;
   background-color: #e53b25;
   width: 50%;
-  margin-top: -100px; }
+  margin-top: -100px;
+  margin-left: -50px; }
   .infiny-faqs .infiny-faqs-title .infiny-faqs-heading {
     color: #ffd9b6;
     font-weight: 600;
@@ -11913,11 +11917,11 @@ a {
     padding-right: 50px; }
 
 .infiny-map .infiny-map-title {
-  padding: 25px;
+  padding: 40px;
   background-color: #f7941d;
-  width: 45%;
-  margin-top: -120px;
-  left: 380px;
+  width: 40%;
+  margin-top: -130px;
+  left: 470px;
   position: absolute;
   z-index: 30; }
   .infiny-map .infiny-map-title .infiny-map-heading {

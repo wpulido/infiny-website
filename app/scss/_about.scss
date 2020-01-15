@@ -1,6 +1,9 @@
 .about-infiny {
   .about-bg {
-    margin-top: -200px;
+    margin-top: -195px;
+    width: 100vw;
+    max-height: 950px;
+    height: 100%;
   }
 
   .about-heading {
@@ -21,11 +24,11 @@
     }
   }
   .about-content {
-    margin-top: -170px;
+    margin-top: -145px;
     margin-right: 40px;
     padding: 40px;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 16px;
     text-align: justify;
   }
 }
