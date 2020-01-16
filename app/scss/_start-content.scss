@@ -5,6 +5,12 @@
   width: 55%;
   margin-bottom: 50px;
   position: relative;
+  @media screen and (max-width: $break-tablet) {
+    width: 85%;
+    height: 250px;
+    margin-bottom: 5px;
+    padding: 120px;
+  }
   .intro-text {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -13,6 +19,14 @@
     font-size: 1.9rem;
     padding-right: 20px;
     color: $heading-fonts;
+    @media screen and (max-width: $break-tablet) {
+      margin-top: -100px;
+      margin-left: 0px;
+      padding-right: 0;
+      font-size: 1.3rem;
+      padding: 40px;
+      position: absolute;
+    }
   }
   .infiny-pattern {
     position: absolute;
@@ -20,12 +34,20 @@
     height: auto;
     top: 15px;
     left: 20px;
+    @media screen and (max-width: $break-tablet) {
+      display: none;
+    }
   }
   .infiny-comilla {
     position: absolute;
     width: 10%;
     height: auto;
-    left: 90px;
-    top: 60px;
+    left: 100px;
+    top: 65px;
+    @media screen and (max-width: $break-tablet) {
+      top: 60px;
+      width: 7%;
+      left: 70px;
+    }
   }
 }

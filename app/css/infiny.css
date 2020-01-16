@@ -11583,6 +11583,12 @@ a {
   max-height: 100vh;
   height: 100vh;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .header-wrapper {
+      height: 40vh;
+      min-height: inherit;
+      background-position: center center;
+      width: 120vw; } }
   .header-wrapper .brand-content {
     position: sticky; }
     .header-wrapper .brand-content .brand-centered {
@@ -11605,29 +11611,40 @@ a {
       .header-wrapper .brand-content .menu-toggler:hover {
         background: #e53b25; }
     .header-wrapper .brand-content .heading-text {
-      margin-top: 30px;
+      margin-top: 60px;
       position: relative; }
+      @media screen and (max-width: 768px) {
+        .header-wrapper .brand-content .heading-text {
+          margin-top: 40px; } }
       .header-wrapper .brand-content .heading-text .comillas-abrir {
         position: absolute;
         max-width: 150px;
         width: 100%;
         top: -50px;
-        right: 1050px; }
+        right: 1150px; }
       .header-wrapper .brand-content .heading-text .comillas-cerrar {
         position: absolute;
         max-width: 150px;
         width: 100%;
         top: -50px;
-        left: 1050px; }
+        left: 1150px; }
       .header-wrapper .brand-content .heading-text .heading {
         font-weight: 600;
         font-size: 2.8rem;
         letter-spacing: 0.5px; }
+        @media screen and (max-width: 768px) {
+          .header-wrapper .brand-content .heading-text .heading {
+            font-size: 1.5rem; } }
       .header-wrapper .brand-content .heading-text .sub-heading {
         margin-top: 30px;
         font-weight: 400;
-        font-size: 1em;
+        font-size: 1rem;
         line-height: 20px; }
+        @media screen and (max-width: 768px) {
+          .header-wrapper .brand-content .heading-text .sub-heading {
+            font-size: 0.8rem;
+            line-height: 18px;
+            margin-top: 20px; } }
   .header-wrapper .scroll-hint {
     position: absolute;
     bottom: 20px;
@@ -11759,6 +11776,12 @@ a {
   width: 55%;
   margin-bottom: 50px;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .intro-container {
+      width: 85%;
+      height: 250px;
+      margin-bottom: 5px;
+      padding: 120px; } }
   .intro-container .intro-text {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -11767,24 +11790,44 @@ a {
     font-size: 1.9rem;
     padding-right: 20px;
     color: #ffd9b6; }
+    @media screen and (max-width: 768px) {
+      .intro-container .intro-text {
+        margin-top: -100px;
+        margin-left: 0px;
+        padding-right: 0;
+        font-size: 1.3rem;
+        padding: 40px;
+        position: absolute; } }
   .intro-container .infiny-pattern {
     position: absolute;
     width: 12%;
     height: auto;
     top: 15px;
     left: 20px; }
+    @media screen and (max-width: 768px) {
+      .intro-container .infiny-pattern {
+        display: none; } }
   .intro-container .infiny-comilla {
     position: absolute;
     width: 10%;
     height: auto;
-    left: 90px;
-    top: 60px; }
+    left: 100px;
+    top: 65px; }
+    @media screen and (max-width: 768px) {
+      .intro-container .infiny-comilla {
+        top: 60px;
+        width: 7%;
+        left: 70px; } }
 
 .about-infiny .about-bg {
   margin-top: -195px;
   width: 100vw;
   max-height: 950px;
   height: 100%; }
+  @media screen and (max-width: 768px) {
+    .about-infiny .about-bg {
+      width: 120vw;
+      max-width: 2000px; } }
 
 .about-infiny .about-heading {
   font-weight: 700;
