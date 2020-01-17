@@ -8,16 +8,27 @@
     position: absolute;
     z-index: 30;
     .infiny-map-heading {
-      color: rgb(255, 217, 182);
+      color: rgb(255, 244, 234);
       font-weight: 600;
       font-size: 45px;
+      @media screen and (max-width: $break-tablet) {
+        font-size: 40px;
+      }
     }
     .infiny-map-subheading {
       font-size: 15px;
       font-weight: 300;
       padding-top: 10px;
-      color: rgb(255, 217, 182);
+      color: rgb(247, 226, 206);
       line-height: 30px;
+      @media screen and (max-width: $break-tablet) {
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: $break-tablet) {
+      margin-top: -220px;
+      width: 100%;
+      left: 0;
     }
   }
   .mapouter {
@@ -30,6 +41,16 @@
       background: none !important;
       height: 500px;
       width: 100%;
+      #gmap_canvas {
+        width: 1600px;
+        height: 500px;
+        @media screen and (max-width: $break-tablet) {
+          width: 770px;
+        }
+      }
+    }
+    @media screen and (max-width: $break-tablet) {
+      margin-top: 200px;
     }
   }
 }

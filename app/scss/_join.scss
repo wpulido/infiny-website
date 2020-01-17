@@ -7,10 +7,17 @@
     font-size: 45px;
     position: relative;
     color: $primary;
+    @media screen and (max-width: $break-tablet) {
+      font-size: 2rem;
+    }
   }
   .join-quote {
     font-size: 20px;
     margin-bottom: 5%;
+    @media screen and (max-width: $break-tablet) {
+      font-size: 0.9rem;
+      line-height: 30px;
+    }
   }
   #infinyCarousel {
     .infiny-indicators {

@@ -1,12 +1,13 @@
 .about-infiny {
   .about-bg {
-    margin-top: -195px;
+    margin-top: -255px;
     width: 100vw;
     max-height: 950px;
     height: 100%;
     @media screen and (max-width: $break-tablet) {
-      width: 120vw;
+      // width: 120vw;
       max-width: 2000px;
+      height: 70vh;
     }
   }
 
@@ -15,6 +16,12 @@
     font-size: 3rem;
     color: rgb(229, 59, 37);
     margin-top: -250px;
+    @media screen and (max-width: $break-tablet) {
+      margin-top: -200px;
+      font-size: 1.5rem;
+      margin-right: 40px;
+      margin-left: 22px !important;
+    }
   }
   .infiny-container {
     position: relative;
@@ -25,6 +32,9 @@
       position: absolute;
       top: -18px;
       left: 140px;
+      @media screen and (max-width: $break-tablet) {
+        display: none;
+      }
     }
   }
   .about-content {
@@ -34,5 +44,9 @@
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
+    @media screen and (max-width: $break-tablet) {
+      margin-top: -130px;
+      line-height: 30px;
+    }
   }
 }

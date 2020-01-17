@@ -1,67 +1,78 @@
 .infiny-footer {
   background-color: rgb(247, 148, 29);
   padding: 30px;
-  .social-media {
-    font-size: 18px;
-    padding-left: 40px;
-    a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s ease-in;
-      &:hover {
-        color: rgb(76, 148, 241);
-      }
-    }
-    .facebook {
-      margin-left: 80px;
-    }
-  }
-  .contact {
-    .contact-title {
-      font-size: 18px;
-      margin-left: 25px;
-    }
-    .contact-phone {
-      font-size: 20px;
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-      transition: color 0.3s ease-in;
-      &:hover {
-        color: rgb(76, 148, 241);
-      }
-    }
-  }
 
-  .form {
-    text-align: center;
-  }
-  form .form-group {
-    .form-control {
-      width: 90%;
-      margin-left: 20px;
-      background: rgba(139, 126, 126, 0.3);
-      border: 0;
-      &::placeholder {
-        color: white;
-        padding-left: 20px;
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @media screen and (max-width: $break-tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .social-media {
+      font-size: 20px;
+      padding-left: 40px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .facebook {
+        margin-left: 80px;
+        @media screen and (max-width: $break-tablet) {
+          margin-left: 20px;
+        }
+      }
+      @media screen and (max-width: $break-tablet) {
+        padding-left: 0;
       }
     }
-    small {
-      font-size: 12px;
-      margin-left: 20px;
+
+    .contact {
+      .contact-title {
+        font-size: 18px;
+        margin-left: 25px;
+        color: rgb(255, 244, 234);
+      }
+      .contact-phone {
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+      @media screen and (max-width: $break-tablet) {
+        order: 1;
+      }
+    }
+
+    .form {
+      text-align: center;
+      color: rgb(255, 244, 234);
+    }
+    form .form-group {
+      .form-control {
+        width: 90%;
+        margin-left: 20px;
+        background: rgba(139, 126, 126, 0.3);
+        border: 0;
+        &::placeholder {
+          color: white;
+          padding-left: 20px;
+        }
+      }
+      small {
+        font-size: 12px;
+        margin-left: 20px;
+        color: rgb(255, 244, 234);
+      }
     }
   }
 
   .footer-text {
     p {
-      font-size: 14px;
+      font-size: 11px;
       color: white;
       .impulsa-link {
         color: rgb(255, 255, 255);
-        transition: color 0.3s ease-in;
-        &:hover {
-          color: rgb(76, 148, 241);
-        }
       }
     }
     hr {

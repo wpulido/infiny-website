@@ -5,6 +5,7 @@ html {
   padding: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
   body {
     font-family: "Poppins", sans-serif;
     color: #696969;
@@ -16,4 +17,10 @@ html {
 
 a {
   text-decoration-line: none !important;
+}
+
+.rwd-break {
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
 }
