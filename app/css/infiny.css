@@ -11594,6 +11594,11 @@ a {
       max-height: 60vh;
       background-position: -70px 100px;
       background-size: 1000px 520px; } }
+  @media screen and (min-width: 1024px) {
+    .header-wrapper {
+      height: 80vh;
+      background-attachment: initial;
+      background-position: top; } }
   .header-wrapper .brand-content {
     position: sticky; }
     .header-wrapper .brand-content .brand-centered {
@@ -11639,6 +11644,11 @@ a {
             right: 500px;
             top: -40px;
             max-width: 100px; } }
+        @media screen and (min-width: 1024px) {
+          .header-wrapper .brand-content .heading-text .comillas-abrir {
+            right: 880px;
+            top: -20px;
+            max-width: 100px; } }
       .header-wrapper .brand-content .heading-text .comillas-cerrar {
         position: absolute;
         max-width: 150px;
@@ -11649,6 +11659,11 @@ a {
           .header-wrapper .brand-content .heading-text .comillas-cerrar {
             left: 500px;
             top: -5px;
+            max-width: 100px; } }
+        @media screen and (min-width: 1024px) {
+          .header-wrapper .brand-content .heading-text .comillas-cerrar {
+            left: 880px;
+            top: -20px;
             max-width: 100px; } }
       .header-wrapper .brand-content .heading-text .heading {
         font-weight: 600;
@@ -11835,6 +11850,13 @@ a {
         font-size: 1.3rem;
         padding: 40px;
         position: absolute; } }
+    @media screen and (min-width: 1024px) {
+      .intro-container .intro-text {
+        font-size: 1.4rem;
+        margin-top: 0; } }
+    @media screen and (min-width: 1366px) {
+      .intro-container .intro-text {
+        margin-top: -10px; } }
   .intro-container .infiny-pattern {
     position: absolute;
     width: 12%;
@@ -11844,6 +11866,12 @@ a {
     @media screen and (max-width: 768px) {
       .intro-container .infiny-pattern {
         display: none; } }
+    @media screen and (min-width: 1024px) {
+      .intro-container .infiny-pattern {
+        width: 18%; } }
+    @media screen and (min-width: 1366px) {
+      .intro-container .infiny-pattern {
+        top: 30px; } }
   .intro-container .infiny-comilla {
     position: absolute;
     width: 10%;
@@ -11855,16 +11883,30 @@ a {
         top: 60px;
         width: 7%;
         left: 70px; } }
+    @media screen and (min-width: 1024px) {
+      .intro-container .infiny-comilla {
+        width: 8%;
+        top: 55px;
+        left: 125px; } }
+    @media screen and (min-width: 1366px) {
+      .intro-container .infiny-comilla {
+        top: 45px; } }
 
 .about-infiny .about-bg {
   margin-top: -255px;
   width: 100vw;
-  max-height: 950px;
-  height: 100%; }
+  height: 100vh; }
   @media screen and (max-width: 768px) {
     .about-infiny .about-bg {
       max-width: 2000px;
       height: 70vh; } }
+  @media screen and (min-width: 1024px) {
+    .about-infiny .about-bg {
+      margin-top: -350px;
+      height: 50vh; } }
+  @media screen and (min-width: 1366px) {
+    .about-infiny .about-bg {
+      margin-top: -350px; } }
 
 .about-infiny .about-heading {
   font-weight: 700;
@@ -11877,6 +11919,10 @@ a {
       font-size: 1.5rem;
       margin-right: 40px;
       margin-left: 22px !important; } }
+  @media screen and (min-width: 1024px) {
+    .about-infiny .about-heading {
+      font-size: 2.5rem;
+      margin-top: -110px; } }
 
 .about-infiny .infiny-container {
   position: relative; }
@@ -11890,6 +11936,13 @@ a {
     @media screen and (max-width: 768px) {
       .about-infiny .infiny-container .infiny-iso {
         display: none; } }
+    @media screen and (min-width: 1024px) {
+      .about-infiny .infiny-container .infiny-iso {
+        top: 70px;
+        left: 80px; } }
+    @media screen and (min-width: 1366px) {
+      .about-infiny .infiny-container .infiny-iso {
+        top: 7px; } }
 
 .about-infiny .about-content {
   margin-top: -145px;
@@ -11988,15 +12041,19 @@ a {
         font-size: 30px; } }
   @media screen and (max-width: 768px) {
     .infiny-faqs .infiny-faqs-title {
-      width: 70%;
+      width: 100vw;
       padding: 50px;
-      margin-left: 100px; } }
+      margin-left: -15px;
+      margin-top: 0px; } }
 
 .infiny-faqs .faqs-wrapper {
   margin-left: 130px; }
   @media screen and (max-width: 768px) {
     .infiny-faqs .faqs-wrapper {
       margin-left: 50px; } }
+  @media screen and (min-width: 1024px) {
+    .infiny-faqs .faqs-wrapper {
+      margin-left: 60px; } }
 
 .infiny-faqs .infiny-faq-container {
   margin-top: 50px;
@@ -12005,22 +12062,27 @@ a {
   .infiny-faqs .infiny-faq-container .infiny-icon {
     position: absolute;
     top: 25px;
-    left: -80px;
+    left: -70px;
     font-size: 50px;
     color: #e53b25; }
+    @media screen and (max-width: 480px) {
+      .infiny-faqs .infiny-faq-container .infiny-icon {
+        display: none; } }
     @media screen and (max-width: 768px) {
       .infiny-faqs .infiny-faq-container .infiny-icon {
         display: none; } }
+    @media screen and (min-width: 1024px) {
+      .infiny-faqs .infiny-faq-container .infiny-icon {
+        font-size: 40px; } }
   .infiny-faqs .infiny-faq-container .infiny-faq-question {
     font-size: 15px;
     font-weight: 800;
     line-height: 25px;
-    padding-top: 20px;
     color: #1f1d3a; }
   .infiny-faqs .infiny-faq-container .infiny-faq-answer {
     color: dimgray;
-    margin-top: 40px;
-    font-size: 14px;
+    margin-top: 20px;
+    font-size: 12px;
     letter-spacing: 0.3px;
     line-height: 25px; }
 
@@ -12040,7 +12102,7 @@ a {
   padding: 40px;
   background-color: #f7941d;
   width: 40%;
-  margin-top: -130px;
+  margin: -120px -65px;
   left: 470px;
   position: absolute;
   z-index: 30; }
@@ -12051,6 +12113,9 @@ a {
     @media screen and (max-width: 768px) {
       .infiny-map .infiny-map-title .infiny-map-heading {
         font-size: 40px; } }
+    @media screen and (min-width: 1024px) {
+      .infiny-map .infiny-map-title .infiny-map-heading {
+        font-size: 30px; } }
   .infiny-map .infiny-map-title .infiny-map-subheading {
     font-size: 15px;
     font-weight: 300;
@@ -12060,11 +12125,22 @@ a {
     @media screen and (max-width: 768px) {
       .infiny-map .infiny-map-title .infiny-map-subheading {
         font-size: 18px; } }
+    @media screen and (min-width: 1024px) {
+      .infiny-map .infiny-map-title .infiny-map-subheading {
+        font-size: 12px;
+        line-height: 22px; } }
   @media screen and (max-width: 768px) {
     .infiny-map .infiny-map-title {
       margin-top: -220px;
       width: 100%;
       left: 0; } }
+  @media screen and (min-width: 1024px) {
+    .infiny-map .infiny-map-title {
+      margin: -50px -155px;
+      padding: 5px; } }
+  @media screen and (min-width: 1366px) {
+    .infiny-map .infiny-map-title {
+      margin: -120px -45px; } }
 
 .infiny-map .mapouter {
   position: relative;
@@ -12077,11 +12153,16 @@ a {
     height: 500px;
     width: 100%; }
     .infiny-map .mapouter .gmap_canvas #gmap_canvas {
-      width: 1600px;
+      max-width: 100%;
+      width: 1365px;
+      margin: 0 auto;
       height: 500px; }
       @media screen and (max-width: 768px) {
         .infiny-map .mapouter .gmap_canvas #gmap_canvas {
           width: 770px; } }
+      @media screen and (min-width: 1366px) {
+        .infiny-map .mapouter .gmap_canvas #gmap_canvas {
+          width: 1600px; } }
   @media screen and (max-width: 768px) {
     .infiny-map .mapouter {
       margin-top: 200px; } }

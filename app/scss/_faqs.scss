@@ -16,15 +16,19 @@
     }
 
     @media screen and (max-width: $break-tablet) {
-      width: 70%;
+      width: 100vw;
       padding: 50px;
-      margin-left: 100px;
+      margin-left: -15px;
+      margin-top: 0px;
     }
   }
   .faqs-wrapper {
     margin-left: 130px;
     @media screen and (max-width: $break-tablet) {
       margin-left: 50px;
+    }
+    @media screen and (min-width: $break-md-large) {
+      margin-left: 60px;
     }
   }
   .infiny-faq-container {
@@ -34,25 +38,29 @@
     .infiny-icon {
       position: absolute;
       top: 25px;
-      left: -80px;
+      left: -70px;
       font-size: 50px;
       color: rgb(229, 59, 37);
+      @media screen and (max-width: $break-mobile) {
+        display: none;
+      }
       @media screen and (max-width: $break-tablet) {
         display: none;
+      }
+      @media screen and (min-width: $break-md-large) {
+        font-size: 40px;
       }
     }
     .infiny-faq-question {
       font-size: 15px;
       font-weight: 800;
       line-height: 25px;
-      padding-top: 20px;
-
       color: rgb(31, 29, 58);
     }
     .infiny-faq-answer {
       color: rgb(105, 105, 105);
-      margin-top: 40px;
-      font-size: 14px;
+      margin-top: 20px;
+      font-size: 12px;
       letter-spacing: 0.3px;
       line-height: 25px;
     }

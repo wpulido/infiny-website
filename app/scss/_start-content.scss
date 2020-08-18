@@ -27,6 +27,13 @@
       padding: 40px;
       position: absolute;
     }
+    @media screen and (min-width: $break-md-large) {
+      font-size: 1.4rem;
+      margin-top: 0;
+    }
+    @media screen and (min-width: $break-large) {
+      margin-top: -10px;
+    }
   }
   .infiny-pattern {
     position: absolute;
@@ -36,6 +43,12 @@
     left: 20px;
     @media screen and (max-width: $break-tablet) {
       display: none;
+    }
+    @media screen and (min-width: $break-md-large) {
+      width: 18%;
+    }
+    @media screen and (min-width: $break-large) {
+      top: 30px;
     }
   }
   .infiny-comilla {
@@ -48,6 +61,14 @@
       top: 60px;
       width: 7%;
       left: 70px;
+    }
+    @media screen and (min-width: $break-md-large) {
+      width: 8%;
+      top: 55px;
+      left: 125px;
+    }
+    @media screen and (min-width: $break-large) {
+      top: 45px;
     }
   }
 }
