@@ -1,1 +1,0 @@
-# INFINY - Proyecto Impulsa Creativos
