@@ -1,22 +1,18 @@
 .header-wrapper {
   background-image: url("../images/image1.png");
-  background-position: 0 100px;
+  background-position: top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   max-height: 100vh;
-  height: 100vh;
+  height: 75vh;
   position: relative;
-  @media screen and (max-width: $break-tablet) {
-    height: 60vh;
-    max-height: 60vh;
-    background-position: -70px 100px;
-    background-size: 1000px 520px;
+  @media screen and (min-width: $break-tablet) {
+    height: 85vh;
   }
   @media screen and (min-width: $break-md-large) {
-    height: 80vh;
-    background-attachment: initial;
-    background-position: top;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
   }
   .brand-content {
     position: sticky;
@@ -55,63 +51,45 @@
     }
 
     .heading-text {
-      margin-top: 60px;
-      position: relative;
-      @media screen and (max-width: $break-tablet) {
-        margin-top: 40px;
-      }
+      margin-top: 2rem;
       .comillas-abrir {
-        position: absolute;
-        max-width: 150px;
-        width: 100%;
-        top: -50px;
-        right: 1150px;
-        @media screen and (max-width: $break-tablet) {
-          right: 500px;
-          top: -40px;
+        display: none;
+        @media (min-width: $break-tablet) {
+          position: relative;
           max-width: 100px;
-        }
-        @media screen and (min-width: $break-md-large) {
-          right: 880px;
-          top: -20px;
-          max-width: 100px;
+          width: 100%;
+          top: -4.5vh;
+          display: initial;
         }
       }
       .comillas-cerrar {
-        position: absolute;
-        max-width: 150px;
-        width: 100%;
-        top: -50px;
-        left: 1150px;
-        @media screen and (max-width: $break-tablet) {
-          left: 500px;
-          top: -5px;
+        display: none;
+        @media (min-width: $break-tablet) {
+          position: relative;
           max-width: 100px;
-        }
-        @media screen and (min-width: $break-md-large) {
-          left: 880px;
-          top: -20px;
-          max-width: 100px;
+          width: 100%;
+          top: -4.5vh;
+          display: initial;
         }
       }
       .heading {
         font-weight: 600;
-        font-size: 2.8rem;
+        font-size: 1.5rem;
         letter-spacing: 0.5px;
-        @media screen and (max-width: $break-tablet) {
-          font-size: 1.5rem;
+        @media screen and (min-width: $break-tablet) {
+          font-size: 2rem;
           margin-top: -20px;
         }
       }
       .sub-heading {
-        margin-top: 30px;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 20px;
-        @media screen and (max-width: $break-tablet) {
-          font-size: 0.8rem;
-          line-height: 18px;
-          margin-top: 20px;
+        display: none;
+        @media screen and (min-width: $break-tablet) {
+          display: initial;
+          margin-top: 30px;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 20px;
+          text-align: center;
         }
       }
     }
@@ -161,15 +139,17 @@
 }
 
 .navigation {
+  // display: none;
   width: 100%;
   overflow-x: hidden;
-  height: 60vh;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  // left: -2000px;
   z-index: 10;
   position: absolute;
-  right: -2000px;
   background: rgb(255, 255, 255);
   transition: 0.8s;
-  display: block;
   .logo-right {
     .menu-logo {
       width: 250px;
@@ -188,11 +168,11 @@
   .nav-item {
     margin-top: 25px;
     list-style: none;
-    line-height: 5px;
+    line-height: 2.5rem;
     .nav-link {
       color: $primary;
       text-decoration: none;
-      font-size: 40px;
+      font-size: 1.2rem;
       font-weight: 600;
       font-family: "Poppins", sans-serif;
       transition: color 0.3s ease-in;

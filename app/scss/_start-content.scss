@@ -1,74 +1,58 @@
 .intro-container {
-  padding: 50px;
   background: $primary;
-  height: 300px;
-  width: 55%;
-  margin-bottom: 50px;
+  padding: 20px;
   position: relative;
-  @media screen and (max-width: $break-tablet) {
-    width: 85%;
-    height: 250px;
-    margin-bottom: 5px;
-    padding: 120px;
+  margin-bottom: 0;
+  @media (min-width: $break-tablet) { 
+    margin-bottom: 9%;
+    padding: 4%;
+  }
+  @media (min-width: $break-md-large) {
+    margin-bottom: 17.5%;
+    padding: 6%;
+  }
+  @media (min-width: $break-large) {
+    margin-bottom: 16%;
   }
   .intro-text {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-size: 1.9rem;
-    padding-right: 20px;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    // margin-top: 25px;
+    font-size: 1.1rem;
     color: $heading-fonts;
-    @media screen and (max-width: $break-tablet) {
-      margin-top: -100px;
-      margin-left: 0px;
-      padding-right: 0;
+    @media (min-width: $break-mobile) {
+      font-size: 1rem;
+      padding: 0 3rem 0 3rem;
+    }
+    @media (min-width: $break-md-large) {
       font-size: 1.3rem;
-      padding: 40px;
-      position: absolute;
+      padding: 0 4rem 0 4rem;
+      text-align: start;
+      margin-left: 8%;
     }
-    @media screen and (min-width: $break-md-large) {
+    @media (min-width: $break-large) {
       font-size: 1.4rem;
-      margin-top: 0;
-    }
-    @media screen and (min-width: $break-large) {
-      margin-top: -10px;
+      margin-left: 30px;
+      margin-top: 10px;
     }
   }
   .infiny-pattern {
-    position: absolute;
-    width: 12%;
-    height: auto;
-    top: 15px;
-    left: 20px;
-    @media screen and (max-width: $break-tablet) {
+    @media (max-width: $break-md-large) {
       display: none;
     }
-    @media screen and (min-width: $break-md-large) {
-      width: 18%;
+    @media (min-width: $break-md-large) {
+      position: absolute;
+      width: 16%;
+      top: 6%;
+      left: 4%;
+      height: auto;
     }
-    @media screen and (min-width: $break-large) {
-      top: 30px;
-    }
-  }
-  .infiny-comilla {
-    position: absolute;
-    width: 10%;
-    height: auto;
-    left: 100px;
-    top: 65px;
-    @media screen and (max-width: $break-tablet) {
-      top: 60px;
-      width: 7%;
-      left: 70px;
-    }
-    @media screen and (min-width: $break-md-large) {
-      width: 8%;
-      top: 55px;
-      left: 125px;
-    }
-    @media screen and (min-width: $break-large) {
-      top: 45px;
+    @media (min-width: $break-large) {
+      left: 15px;
+      top: 20px;
+      width: 10%;
     }
   }
 }

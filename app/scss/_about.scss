@@ -1,65 +1,61 @@
 .about-infiny {
   .about-bg {
-    margin-top: -255px;
     width: 100vw;
-    height: 100vh;
-    @media screen and (max-width: $break-tablet) {
-      // width: 120vw;
-      max-width: 2000px;
-      height: 70vh;
+    max-height: 100vh;
+    @media screen and (min-width: $break-tablet) {      
+      height: 60%;
+      margin-top: -20vh;
     }
     @media screen and (min-width: $break-md-large) {
-      margin-top: -350px;
-      height: 50vh;
+      height: 50%;
+      margin-top: -48vh;
     }
     @media screen and (min-width: $break-large) {
-      margin-top: -350px;
+      height: 100%;
+      margin-top: -335px;
     }
   }
 
   .about-heading {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 1.8rem;
     color: rgb(229, 59, 37);
-    margin-top: -250px;
-    @media screen and (max-width: $break-tablet) {
-      margin-top: -200px;
-      font-size: 1.5rem;
-      margin-right: 40px;
-      margin-left: 22px !important;
+    margin-top: -150px;
+    padding-bottom: 45%;
+    text-align: center;
+    @media (min-width: $break-sm-mobile) {
+      padding-bottom: 30%;
     }
-    @media screen and (min-width: $break-md-large) {
-      font-size: 2.5rem;
-      margin-top: -110px;
+    @media (min-width: $break-mobile) {
+      font-size: 2.8rem;
+    }
+    @media (min-width: $break-tablet) {
+      padding-bottom: 25%;
+    }
+    @media (min-width: $break-md-large) {
+      text-align: start;
+      margin-left: 3rem;
+    }
+    @media (min-width: $break-large) {
+      margin-top: -250px;
     }
   }
   .infiny-container {
-    position: relative;
     .infiny-iso {
-      max-width: 280px;
-      width: 100%;
-      margin-top: 20px;
-      position: absolute;
-      top: -18px;
-      left: 140px;
-      @media screen and (max-width: $break-tablet) {
-        display: none;
-      }
+      width: 260px;
+      position: relative;
+      display: none;
       @media screen and (min-width: $break-md-large) {
-        top: 70px;
-        left: 80px;
-      }
-      @media screen and (min-width: $break-large) {
-        top: 7px;
+        display: initial;
+        top: 4vh;
       }
     }
   }
   .about-content {
     margin-top: -145px;
-    margin-right: 40px;
     padding: 40px;
     line-height: 25px;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
     @media screen and (max-width: $break-tablet) {
       margin-top: -130px;

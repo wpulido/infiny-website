@@ -4,43 +4,30 @@
     margin-top: 10%;
     margin-bottom: 5%;
     font-weight: 600;
-    font-size: 45px;
-    position: relative;
+    font-size: 2.5rem;
+    text-align: center;
+    // position: relative;
     color: $primary;
-    @media screen and (max-width: $break-tablet) {
-      font-size: 2rem;
+    @media (min-width: $break-md-large) {
+      font-size: 3rem;
+      text-align: end;
     }
   }
   .join-quote {
-    font-size: 20px;
-    margin-bottom: 5%;
-    @media screen and (max-width: $break-tablet) {
-      font-size: 0.9rem;
+    display: none;
+    @media (min-width: $break-md-large) {
+      display: initial;
+      text-align: left;
+      font-size: 1rem;
       line-height: 30px;
     }
   }
   #infinyCarousel {
-    .infiny-indicators {
-      bottom: -70px;
-      left: 650px;
-      justify-content: space-evenly;
-      li {
-        background-color: $fonts-hover;
-        opacity: 0.5;
-        height: 12px;
-        width: 12px;
-        border-radius: 100%;
-      }
-      .active {
-        background-color: $fonts;
-        opacity: 1;
-      }
-    }
     .carousel-inner {
       .carousel-item {
         max-height: 800px;
         height: 100%;
-        width: 100vw;
+        width: 105vw;
         .infiny-item {
           max-height: 800px;
           height: 100%;

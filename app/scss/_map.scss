@@ -1,48 +1,32 @@
 .infiny-map {
   .infiny-map-title {
-    padding: 40px;
     background-color: rgb(247, 148, 29);
-    width: 40%;
-    margin: -120px -65px;
-    left: 470px;
-    position: absolute;
-    z-index: 30;
+    width: 100%;
+    padding: 4%;
+    position: relative;
     .infiny-map-heading {
       color: rgb(255, 244, 234);
       font-weight: 600;
-      font-size: 45px;
-      @media screen and (max-width: $break-tablet) {
-        font-size: 40px;
-      }
-      @media screen and (min-width: $break-md-large) {
-        font-size: 30px;
+      font-size: 2rem;
+      @media screen and (min-width: $break-tablet) {
+        font-size: 3rem;
       }
     }
     .infiny-map-subheading {
-      font-size: 15px;
+      font-size: .85rem;
+      padding: .5rem 1rem 0 1rem;
       font-weight: 300;
-      padding-top: 10px;
       color: rgb(247, 226, 206);
       line-height: 30px;
-      @media screen and (max-width: $break-tablet) {
-        font-size: 18px;
-      }
-      @media screen and (min-width: $break-md-large) {
-        font-size: 12px;
-        line-height: 22px;
+      @media (min-width: $break-tablet) {
+        font-size: 1rem;
       }
     }
-    @media screen and (max-width: $break-tablet) {
-      margin-top: -220px;
-      width: 100%;
-      left: 0;
-    }
-    @media screen and (min-width: $break-md-large) {
-      margin: -50px -155px;
-      padding: 5px;
-    }
-    @media screen and (min-width: $break-large) {
-      margin: -120px -45px;
+    @media (min-width: $break-md-large) {
+      width: 45%;
+      margin-bottom: -15vh;
+      z-index: 30;
+      padding: 2%;
     }
   }
   .mapouter {
@@ -67,9 +51,6 @@
           width: 1600px;
         }
       }
-    }
-    @media screen and (max-width: $break-tablet) {
-      margin-top: 200px;
     }
   }
 }

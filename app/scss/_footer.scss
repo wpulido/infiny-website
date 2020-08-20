@@ -1,49 +1,26 @@
 .infiny-footer {
-  background-color: rgb(247, 148, 29);
+  background-color: $primary;
   padding: 30px;
 
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    @media screen and (max-width: $break-tablet) {
-      flex-direction: column;
-      align-items: center;
+  .footer-title {
+    color: $links;
+    font-size: 18px;
+    text-align: center;
+  }
+  .footer-links {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $links;
+  }
+  .social-media {
+    margin: .8rem auto;
+    text-align: center;
+    @media (min-width: $break-md-large){
+      text-align: left;
     }
-    .social-media {
-      font-size: 20px;
-      padding-left: 40px;
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
-      .facebook {
-        margin-left: 80px;
-        @media screen and (max-width: $break-tablet) {
-          margin-left: 20px;
-        }
-      }
-      @media screen and (max-width: $break-tablet) {
-        padding-left: 0;
-      }
-    }
+  }
 
-    .contact {
-      .contact-title {
-        font-size: 18px;
-        margin-left: 25px;
-        color: rgb(255, 244, 234);
-      }
-      .contact-phone {
-        font-size: 20px;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-      }
-      @media screen and (max-width: $break-tablet) {
-        order: 1;
-      }
-    }
-
+    
     .form {
       text-align: center;
       color: rgb(255, 244, 234);
@@ -72,7 +49,7 @@
       font-size: 11px;
       color: white;
       .impulsa-link {
-        color: rgb(255, 255, 255);
+        color: $links;
       }
     }
     hr {
@@ -82,4 +59,3 @@
   hr {
     color: #fff;
   }
-}

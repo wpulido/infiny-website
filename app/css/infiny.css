@@ -11560,17 +11560,18 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Brands'; }
 
 html {
+  scroll-behavior: smooth; }
+
+body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  width: 100%; }
-  html body {
-    font-family: "Poppins", sans-serif;
-    color: #696969;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #696969;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 a {
   text-decoration-line: none !important; }
@@ -11581,24 +11582,20 @@ a {
 
 .header-wrapper {
   background-image: url("../images/image1.png");
-  background-position: 0 100px;
+  background-position: top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   max-height: 100vh;
-  height: 100vh;
+  height: 75vh;
   position: relative; }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     .header-wrapper {
-      height: 60vh;
-      max-height: 60vh;
-      background-position: -70px 100px;
-      background-size: 1000px 520px; } }
+      height: 85vh; } }
   @media screen and (min-width: 1024px) {
     .header-wrapper {
-      height: 80vh;
-      background-attachment: initial;
-      background-position: top; } }
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center center; } }
   .header-wrapper .brand-content {
     position: sticky; }
     .header-wrapper .brand-content .brand-centered {
@@ -11628,61 +11625,43 @@ a {
           margin: 0;
           margin-top: -30px; } }
     .header-wrapper .brand-content .heading-text {
-      margin-top: 60px;
-      position: relative; }
-      @media screen and (max-width: 768px) {
-        .header-wrapper .brand-content .heading-text {
-          margin-top: 40px; } }
+      margin-top: 2rem; }
       .header-wrapper .brand-content .heading-text .comillas-abrir {
-        position: absolute;
-        max-width: 150px;
-        width: 100%;
-        top: -50px;
-        right: 1150px; }
-        @media screen and (max-width: 768px) {
+        display: none; }
+        @media (min-width: 768px) {
           .header-wrapper .brand-content .heading-text .comillas-abrir {
-            right: 500px;
-            top: -40px;
-            max-width: 100px; } }
-        @media screen and (min-width: 1024px) {
-          .header-wrapper .brand-content .heading-text .comillas-abrir {
-            right: 880px;
-            top: -20px;
-            max-width: 100px; } }
+            position: relative;
+            max-width: 100px;
+            width: 100%;
+            top: -4.5vh;
+            display: initial; } }
       .header-wrapper .brand-content .heading-text .comillas-cerrar {
-        position: absolute;
-        max-width: 150px;
-        width: 100%;
-        top: -50px;
-        left: 1150px; }
-        @media screen and (max-width: 768px) {
+        display: none; }
+        @media (min-width: 768px) {
           .header-wrapper .brand-content .heading-text .comillas-cerrar {
-            left: 500px;
-            top: -5px;
-            max-width: 100px; } }
-        @media screen and (min-width: 1024px) {
-          .header-wrapper .brand-content .heading-text .comillas-cerrar {
-            left: 880px;
-            top: -20px;
-            max-width: 100px; } }
+            position: relative;
+            max-width: 100px;
+            width: 100%;
+            top: -4.5vh;
+            display: initial; } }
       .header-wrapper .brand-content .heading-text .heading {
         font-weight: 600;
-        font-size: 2.8rem;
+        font-size: 1.5rem;
         letter-spacing: 0.5px; }
-        @media screen and (max-width: 768px) {
+        @media screen and (min-width: 768px) {
           .header-wrapper .brand-content .heading-text .heading {
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-top: -20px; } }
       .header-wrapper .brand-content .heading-text .sub-heading {
-        margin-top: 30px;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 20px; }
-        @media screen and (max-width: 768px) {
+        display: none; }
+        @media screen and (min-width: 768px) {
           .header-wrapper .brand-content .heading-text .sub-heading {
-            font-size: 0.8rem;
-            line-height: 18px;
-            margin-top: 20px; } }
+            display: initial;
+            margin-top: 30px;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 20px;
+            text-align: center; } }
   .header-wrapper .scroll-hint {
     position: absolute;
     bottom: 20px;
@@ -11722,13 +11701,13 @@ a {
 .navigation {
   width: 100%;
   overflow-x: hidden;
-  height: 60vh;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
   z-index: 10;
   position: absolute;
-  right: -2000px;
   background: white;
-  transition: 0.8s;
-  display: block; }
+  transition: 0.8s; }
   .navigation .logo-right .menu-logo {
     width: 250px;
     height: auto; }
@@ -11742,11 +11721,11 @@ a {
   .navigation .nav-item {
     margin-top: 25px;
     list-style: none;
-    line-height: 5px; }
+    line-height: 2.5rem; }
     .navigation .nav-item .nav-link {
       color: #f7941d;
       text-decoration: none;
-      font-size: 40px;
+      font-size: 1.2rem;
       font-weight: 600;
       font-family: "Poppins", sans-serif;
       transition: color 0.3s ease-in; }
@@ -11763,193 +11742,156 @@ a {
 .infiny-footer {
   background-color: #f7941d;
   padding: 30px; }
-  .infiny-footer .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row; }
-    @media screen and (max-width: 768px) {
-      .infiny-footer .footer-container {
-        flex-direction: column;
-        align-items: center; } }
-    .infiny-footer .footer-container .social-media {
-      font-size: 20px;
-      padding-left: 40px; }
-      .infiny-footer .footer-container .social-media a {
-        color: #fff;
-        text-decoration: none; }
-      .infiny-footer .footer-container .social-media .facebook {
-        margin-left: 80px; }
-        @media screen and (max-width: 768px) {
-          .infiny-footer .footer-container .social-media .facebook {
-            margin-left: 20px; } }
-      @media screen and (max-width: 768px) {
-        .infiny-footer .footer-container .social-media {
-          padding-left: 0; } }
-    .infiny-footer .footer-container .contact .contact-title {
-      font-size: 18px;
-      margin-left: 25px;
-      color: #fff4ea; }
-    .infiny-footer .footer-container .contact .contact-phone {
-      font-size: 20px;
-      text-decoration: none;
-      color: white; }
-    @media screen and (max-width: 768px) {
-      .infiny-footer .footer-container .contact {
-        order: 1; } }
-    .infiny-footer .footer-container .form {
-      text-align: center;
-      color: #fff4ea; }
-    .infiny-footer .footer-container form .form-group .form-control {
-      width: 90%;
-      margin-left: 20px;
-      background: rgba(139, 126, 126, 0.3);
-      border: 0; }
-      .infiny-footer .footer-container form .form-group .form-control::placeholder {
-        color: white;
-        padding-left: 20px; }
-    .infiny-footer .footer-container form .form-group small {
-      font-size: 12px;
-      margin-left: 20px;
-      color: #fff4ea; }
-  .infiny-footer .footer-text p {
-    font-size: 11px;
-    color: white; }
-    .infiny-footer .footer-text p .impulsa-link {
-      color: white; }
-  .infiny-footer .footer-text hr {
-    color: white; }
-  .infiny-footer hr {
-    color: #fff; }
+  .infiny-footer .footer-title {
+    color: #fff4ea;
+    font-size: 18px;
+    text-align: center; }
+  .infiny-footer .footer-links {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff4ea; }
+  .infiny-footer .social-media {
+    margin: .8rem auto;
+    text-align: center; }
+    @media (min-width: 1024px) {
+      .infiny-footer .social-media {
+        text-align: left; } }
+  .infiny-footer .form {
+    text-align: center;
+    color: #fff4ea; }
+  .infiny-footer form .form-group .form-control {
+    width: 90%;
+    margin-left: 20px;
+    background: rgba(139, 126, 126, 0.3);
+    border: 0; }
+    .infiny-footer form .form-group .form-control::placeholder {
+      color: white;
+      padding-left: 20px; }
+  .infiny-footer form .form-group small {
+    font-size: 12px;
+    margin-left: 20px;
+    color: #fff4ea; }
+
+.footer-text p {
+  font-size: 11px;
+  color: white; }
+  .footer-text p .impulsa-link {
+    color: #fff4ea; }
+
+.footer-text hr {
+  color: white; }
+
+hr {
+  color: #fff; }
 
 .intro-container {
-  padding: 50px;
   background: #f7941d;
-  height: 300px;
-  width: 55%;
-  margin-bottom: 50px;
-  position: relative; }
-  @media screen and (max-width: 768px) {
+  padding: 20px;
+  position: relative;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
     .intro-container {
-      width: 85%;
-      height: 250px;
-      margin-bottom: 5px;
-      padding: 120px; } }
+      margin-bottom: 9%;
+      padding: 4%; } }
+  @media (min-width: 1024px) {
+    .intro-container {
+      margin-bottom: 17.5%;
+      padding: 6%; } }
+  @media (min-width: 1250px) {
+    .intro-container {
+      margin-bottom: 16%; } }
   .intro-container .intro-text {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-size: 1.9rem;
-    padding-right: 20px;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.1rem;
     color: #ffd9b6; }
-    @media screen and (max-width: 768px) {
+    @media (min-width: 480px) {
       .intro-container .intro-text {
-        margin-top: -100px;
-        margin-left: 0px;
-        padding-right: 0;
+        font-size: 1rem;
+        padding: 0 3rem 0 3rem; } }
+    @media (min-width: 1024px) {
+      .intro-container .intro-text {
         font-size: 1.3rem;
-        padding: 40px;
-        position: absolute; } }
-    @media screen and (min-width: 1024px) {
+        padding: 0 4rem 0 4rem;
+        text-align: start;
+        margin-left: 8%; } }
+    @media (min-width: 1250px) {
       .intro-container .intro-text {
         font-size: 1.4rem;
-        margin-top: 0; } }
-    @media screen and (min-width: 1366px) {
-      .intro-container .intro-text {
-        margin-top: -10px; } }
-  .intro-container .infiny-pattern {
-    position: absolute;
-    width: 12%;
-    height: auto;
-    top: 15px;
-    left: 20px; }
-    @media screen and (max-width: 768px) {
-      .intro-container .infiny-pattern {
-        display: none; } }
-    @media screen and (min-width: 1024px) {
-      .intro-container .infiny-pattern {
-        width: 18%; } }
-    @media screen and (min-width: 1366px) {
-      .intro-container .infiny-pattern {
-        top: 30px; } }
-  .intro-container .infiny-comilla {
-    position: absolute;
-    width: 10%;
-    height: auto;
-    left: 100px;
-    top: 65px; }
-    @media screen and (max-width: 768px) {
-      .intro-container .infiny-comilla {
-        top: 60px;
-        width: 7%;
-        left: 70px; } }
-    @media screen and (min-width: 1024px) {
-      .intro-container .infiny-comilla {
-        width: 8%;
-        top: 55px;
-        left: 125px; } }
-    @media screen and (min-width: 1366px) {
-      .intro-container .infiny-comilla {
-        top: 45px; } }
+        margin-left: 30px;
+        margin-top: 10px; } }
+  @media (max-width: 1024px) {
+    .intro-container .infiny-pattern {
+      display: none; } }
+  @media (min-width: 1024px) {
+    .intro-container .infiny-pattern {
+      position: absolute;
+      width: 16%;
+      top: 6%;
+      left: 4%;
+      height: auto; } }
+  @media (min-width: 1250px) {
+    .intro-container .infiny-pattern {
+      left: 15px;
+      top: 20px;
+      width: 10%; } }
 
 .about-infiny .about-bg {
-  margin-top: -255px;
   width: 100vw;
-  height: 100vh; }
-  @media screen and (max-width: 768px) {
+  max-height: 100vh; }
+  @media screen and (min-width: 768px) {
     .about-infiny .about-bg {
-      max-width: 2000px;
-      height: 70vh; } }
+      height: 60%;
+      margin-top: -20vh; } }
   @media screen and (min-width: 1024px) {
     .about-infiny .about-bg {
-      margin-top: -350px;
-      height: 50vh; } }
-  @media screen and (min-width: 1366px) {
+      height: 50%;
+      margin-top: -48vh; } }
+  @media screen and (min-width: 1250px) {
     .about-infiny .about-bg {
-      margin-top: -350px; } }
+      height: 100%;
+      margin-top: -335px; } }
 
 .about-infiny .about-heading {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: #e53b25;
-  margin-top: -250px; }
-  @media screen and (max-width: 768px) {
+  margin-top: -150px;
+  padding-bottom: 45%;
+  text-align: center; }
+  @media (min-width: 360px) {
     .about-infiny .about-heading {
-      margin-top: -200px;
-      font-size: 1.5rem;
-      margin-right: 40px;
-      margin-left: 22px !important; } }
-  @media screen and (min-width: 1024px) {
+      padding-bottom: 30%; } }
+  @media (min-width: 480px) {
     .about-infiny .about-heading {
-      font-size: 2.5rem;
-      margin-top: -110px; } }
+      font-size: 2.8rem; } }
+  @media (min-width: 768px) {
+    .about-infiny .about-heading {
+      padding-bottom: 25%; } }
+  @media (min-width: 1024px) {
+    .about-infiny .about-heading {
+      text-align: start;
+      margin-left: 3rem; } }
+  @media (min-width: 1250px) {
+    .about-infiny .about-heading {
+      margin-top: -250px; } }
 
-.about-infiny .infiny-container {
-  position: relative; }
-  .about-infiny .infiny-container .infiny-iso {
-    max-width: 280px;
-    width: 100%;
-    margin-top: 20px;
-    position: absolute;
-    top: -18px;
-    left: 140px; }
-    @media screen and (max-width: 768px) {
-      .about-infiny .infiny-container .infiny-iso {
-        display: none; } }
-    @media screen and (min-width: 1024px) {
-      .about-infiny .infiny-container .infiny-iso {
-        top: 70px;
-        left: 80px; } }
-    @media screen and (min-width: 1366px) {
-      .about-infiny .infiny-container .infiny-iso {
-        top: 7px; } }
+.about-infiny .infiny-container .infiny-iso {
+  width: 260px;
+  position: relative;
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .about-infiny .infiny-container .infiny-iso {
+      display: initial;
+      top: 4vh; } }
 
 .about-infiny .about-content {
   margin-top: -145px;
-  margin-right: 40px;
   padding: 40px;
   line-height: 25px;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: justify; }
   @media screen and (max-width: 768px) {
     .about-infiny .about-content {
@@ -11983,36 +11925,25 @@ a {
     margin-top: 10%;
     margin-bottom: 5%;
     font-weight: 600;
-    font-size: 45px;
-    position: relative;
+    font-size: 2.5rem;
+    text-align: center;
     color: #f7941d; }
-    @media screen and (max-width: 768px) {
+    @media (min-width: 1024px) {
       .infiny-join .join-heading {
-        font-size: 2rem; } }
+        font-size: 3rem;
+        text-align: end; } }
   .infiny-join .join-quote {
-    font-size: 20px;
-    margin-bottom: 5%; }
-    @media screen and (max-width: 768px) {
+    display: none; }
+    @media (min-width: 1024px) {
       .infiny-join .join-quote {
-        font-size: 0.9rem;
+        display: initial;
+        text-align: left;
+        font-size: 1rem;
         line-height: 30px; } }
-  .infiny-join #infinyCarousel .infiny-indicators {
-    bottom: -70px;
-    left: 650px;
-    justify-content: space-evenly; }
-    .infiny-join #infinyCarousel .infiny-indicators li {
-      background-color: #e53b25;
-      opacity: 0.5;
-      height: 12px;
-      width: 12px;
-      border-radius: 100%; }
-    .infiny-join #infinyCarousel .infiny-indicators .active {
-      background-color: dimgray;
-      opacity: 1; }
   .infiny-join #infinyCarousel .carousel-inner .carousel-item {
     max-height: 800px;
     height: 100%;
-    width: 100vw; }
+    width: 105vw; }
     .infiny-join #infinyCarousel .carousel-inner .carousel-item .infiny-item {
       max-height: 800px;
       height: 100%; }
@@ -12025,122 +11956,99 @@ a {
     color: #d4d3d3;
     opacity: 0.7; }
 
+@media (min-width: 1024px) {
+  .infiny-faqs .container {
+    margin-right: 3rem; } }
+
 .infiny-faqs .infiny-faqs-title {
-  padding: 70px;
-  background-color: #e53b25;
-  width: 50%;
-  margin-top: -100px;
-  margin-left: -50px; }
+  padding: 50px;
+  background-color: #e53b25; }
   .infiny-faqs .infiny-faqs-title .infiny-faqs-heading {
     color: #fff4ea;
     font-weight: 600;
     text-align: center;
-    font-size: 45px; }
-    @media screen and (max-width: 768px) {
+    font-size: 2rem; }
+    @media (min-width: 1024px) {
       .infiny-faqs .infiny-faqs-title .infiny-faqs-heading {
-        font-size: 30px; } }
-  @media screen and (max-width: 768px) {
+        font-size: 3rem;
+        text-align: start; } }
+  @media (min-width: 1024px) {
     .infiny-faqs .infiny-faqs-title {
-      width: 100vw;
-      padding: 50px;
-      margin-left: -15px;
-      margin-top: 0px; } }
+      margin-top: -10vh; } }
 
-.infiny-faqs .faqs-wrapper {
-  margin-left: 130px; }
-  @media screen and (max-width: 768px) {
-    .infiny-faqs .faqs-wrapper {
-      margin-left: 50px; } }
-  @media screen and (min-width: 1024px) {
-    .infiny-faqs .faqs-wrapper {
-      margin-left: 60px; } }
-
-.infiny-faqs .infiny-faq-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.infiny-faqs .faqs-wrapper .infiny-faq-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
   position: relative; }
-  .infiny-faqs .infiny-faq-container .infiny-icon {
-    position: absolute;
-    top: 25px;
-    left: -70px;
+  .infiny-faqs .faqs-wrapper .infiny-faq-container .infiny-icon {
     font-size: 50px;
     color: #e53b25; }
-    @media screen and (max-width: 480px) {
-      .infiny-faqs .infiny-faq-container .infiny-icon {
-        display: none; } }
-    @media screen and (max-width: 768px) {
-      .infiny-faqs .infiny-faq-container .infiny-icon {
-        display: none; } }
-    @media screen and (min-width: 1024px) {
-      .infiny-faqs .infiny-faq-container .infiny-icon {
-        font-size: 40px; } }
-  .infiny-faqs .infiny-faq-container .infiny-faq-question {
+    @media (min-width: 1024px) {
+      .infiny-faqs .faqs-wrapper .infiny-faq-container .infiny-icon {
+        position: relative;
+        right: 5vw;
+        top: 7vh; } }
+  .infiny-faqs .faqs-wrapper .infiny-faq-container .infiny-faq-question {
     font-size: 15px;
+    padding: 5%;
     font-weight: 800;
     line-height: 25px;
     color: #1f1d3a; }
-  .infiny-faqs .infiny-faq-container .infiny-faq-answer {
+    @media (min-width: 1024px) {
+      .infiny-faqs .faqs-wrapper .infiny-faq-container .infiny-faq-question {
+        padding: 0; } }
+  .infiny-faqs .faqs-wrapper .infiny-faq-container .infiny-faq-answer {
     color: dimgray;
-    margin-top: 20px;
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: .8rem;
     letter-spacing: 0.3px;
     line-height: 25px; }
+    @media (min-width: 1024px) {
+      .infiny-faqs .faqs-wrapper .infiny-faq-container .infiny-faq-answer {
+        margin-top: 2vw; } }
+  @media (min-width: 1024px) {
+    .infiny-faqs .faqs-wrapper .infiny-faq-container {
+      text-align: justify; } }
 
 .infiny-faqs .faqs-ask {
-  padding-top: 50px;
-  padding-bottom: 150px; }
-  .infiny-faqs .faqs-ask .faqs-btn {
-    background-color: #f7941d;
-    border-radius: 0;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #e53b25;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: #fff4ea; }
+  padding: 5% 0 5% 0; }
+
+.infiny-faqs .faqs-btn {
+  background: #f7941d;
+  border-radius: 0;
+  border-bottom: 3px solid #e53b25;
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  font-size: 1.1rem;
+  color: #fff4ea; }
 
 .infiny-map .infiny-map-title {
-  padding: 40px;
   background-color: #f7941d;
-  width: 40%;
-  margin: -120px -65px;
-  left: 470px;
-  position: absolute;
-  z-index: 30; }
+  width: 100%;
+  padding: 4%;
+  position: relative; }
   .infiny-map .infiny-map-title .infiny-map-heading {
     color: #fff4ea;
     font-weight: 600;
-    font-size: 45px; }
-    @media screen and (max-width: 768px) {
+    font-size: 2rem; }
+    @media screen and (min-width: 768px) {
       .infiny-map .infiny-map-title .infiny-map-heading {
-        font-size: 40px; } }
-    @media screen and (min-width: 1024px) {
-      .infiny-map .infiny-map-title .infiny-map-heading {
-        font-size: 30px; } }
+        font-size: 3rem; } }
   .infiny-map .infiny-map-title .infiny-map-subheading {
-    font-size: 15px;
+    font-size: .85rem;
+    padding: .5rem 1rem 0 1rem;
     font-weight: 300;
-    padding-top: 10px;
     color: #f7e2ce;
     line-height: 30px; }
-    @media screen and (max-width: 768px) {
+    @media (min-width: 768px) {
       .infiny-map .infiny-map-title .infiny-map-subheading {
-        font-size: 18px; } }
-    @media screen and (min-width: 1024px) {
-      .infiny-map .infiny-map-title .infiny-map-subheading {
-        font-size: 12px;
-        line-height: 22px; } }
-  @media screen and (max-width: 768px) {
+        font-size: 1rem; } }
+  @media (min-width: 1024px) {
     .infiny-map .infiny-map-title {
-      margin-top: -220px;
-      width: 100%;
-      left: 0; } }
-  @media screen and (min-width: 1024px) {
-    .infiny-map .infiny-map-title {
-      margin: -50px -155px;
-      padding: 5px; } }
-  @media screen and (min-width: 1366px) {
-    .infiny-map .infiny-map-title {
-      margin: -120px -45px; } }
+      width: 45%;
+      margin-bottom: -15vh;
+      z-index: 30;
+      padding: 2%; } }
 
 .infiny-map .mapouter {
   position: relative;
@@ -12160,9 +12068,6 @@ a {
       @media screen and (max-width: 768px) {
         .infiny-map .mapouter .gmap_canvas #gmap_canvas {
           width: 770px; } }
-      @media screen and (min-width: 1366px) {
+      @media screen and (min-width: 1250px) {
         .infiny-map .mapouter .gmap_canvas #gmap_canvas {
           width: 1600px; } }
-  @media screen and (max-width: 768px) {
-    .infiny-map .mapouter {
-      margin-top: 200px; } }

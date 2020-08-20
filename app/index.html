@@ -22,7 +22,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico">
   </head>
   <body>
+
     <header class="header-wrapper">
+
       <div class="navigation navEffects" id="navEffects">
         <label for="menuToggle"></label>
         <div class="row">
@@ -43,7 +45,7 @@
             >&times;</a
           >
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-12 col-sm-12">
               <ul>
                 <li class="nav-item">
                   <a class="nav-link" href="./index.html">Inicio</a>
@@ -52,10 +54,10 @@
                   <a class="nav-link" href="#">El Programa</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contáctanos</a>
+                  <a class="nav-link" href="#">Contacto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                  <a class="nav-link" href="#">FAQS</a>
                 </li>
               </ul>
             </div>            
@@ -75,18 +77,22 @@
           </a>
         </div>
 
-        <div class="heading-text text-center">
-          <img src="./images/comilla-abrir.svg" class="comillas-abrir animated fadeInLeft" alt="Comilla infiny">
-          <h2 class="heading animated fadeInDown delay-1s">
-            Una infinidad 
-            <br class="rwd-break" />
-            de oportunidades
-          </h2>
-          <img src="./images/comilla-cerrar.svg" class="comillas-cerrar animated fadeInRight" alt="Comilla infiny"> 
-          <p class="sub-heading animated fadeInUp delay-1s">
-            La ingeniería continuará siempre <br />
-            transformando y mejorando la sociedad
-          </p>
+        <div class="heading-text">
+          <div class="row justify-content-center text-center">
+            <img src="./images/comilla-abrir.svg" class="comillas-abrir animated fadeInLeft" alt="Comilla infiny">
+            <div class="text-slogan">
+              <h2 class="heading animated fadeInDown delay-1s">
+                Una infinidad 
+                <br class="rwd-break" />
+                de oportunidades
+              </h2>
+              <p class="sub-heading animated fadeInUp delay-1s">
+                La ingeniería continuará siempre <br />
+                transformando y mejorando la sociedad
+              </p>
+            </div>
+            <img src="./images/comilla-cerrar.svg" class="comillas-cerrar animated fadeInRight" alt="Comilla infiny"> 
+          </div>
         </div>
       </div>
 
@@ -98,11 +104,10 @@
 
     <section class="body-wrapper" id="content">
       <div class="row">
-        <div class="col-md-12 col-sm-12">
+        <div class="col-lg-6 col-md-12">
           <div class="intro-container shadow">
             <div class="row">
               <img src="images/pattern.svg" alt="Infiny logo pattern" class="infiny-pattern animated fadeInLeft">
-              <img src="images/comilla-blanca.svg" alt="Abrir comillas" class="infiny-comilla animated slideInLeft">
               <h3 class="intro-text animated slideInLeft">Nuestro compromiso: Otorgarles la
                 oportunidad de tener un inmueble
                 propio a cada Venezolano, de cada
@@ -115,9 +120,9 @@
       <div class="about-infiny">
         <img src="images/image2.png" alt="About Infiny" class="img-fluid about-bg">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-12">
             <div class="container">
-              <h2 class="display-4 about-heading ml-5">
+              <h2 class="display-4 about-heading">
                 ¡Nosotros ponemos <br> la casa, tú pones <br> el hogar!
               </h2>
               <div class="infiny-container text-center">
@@ -125,7 +130,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-6 col-md-12">
             <p class="about-content text-muted">
               Infiny es una compañía inmobiliaria Venezolana inspirada y fundada sobre las
               bases de ser parte de una solución a futuro para la situación del país,
@@ -148,43 +153,23 @@
           </div>
         </div>
       </div>
-      <div class="infiny-program">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="container">
-              <h3 class="text-right program-heading">El programa <br>“Campaña Inmobiliaria”</h3>
-            </div>
-            <div class="program-reel text-center">
-
-
-              <a href="" class="btn infiny-btn btn-lg shadow-sm">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <div class="infiny-join">
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <div class="container">
-              <h3 class="text-right join-heading">
+              <h3 class="join-heading">
                 ¿Quieres saber cómo ser
                 <br>
                 parte del futuro con 
                 <br>
                 Infiny?
               </h3>
-              <p class="text-left join-quote blockquote text-muted">“Los imposibles de hoy serán los <br> posibles de mañana”</p>
+              <blockquote class="join-quote blockquote">“Los imposibles de hoy serán los <br> posibles de mañana”</blockquote>
             </div>
           </div>
           <div id="infinyCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators infiny-indicators">
-              <li data-target="#infinyCarousel" data-slide-to="0" class="active single-indicator"></li>
-              <li data-target="#infinyCarousel" data-slide-to="1" class="single-indicator"></li>
-              <li data-target="#infinyCarousel" data-slide-to="2" class="single-indicator"></li>
-              <li data-target="#infinyCarousel" data-slide-to="3" class="single-indicator"></li>
-              <li data-target="#infinyCarousel" data-slide-to="4" class="single-indicator"></li>
-            </ol>
+            
             
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -216,15 +201,13 @@
       </div>
 
       <div class="infiny-faqs">
-        <div class="col-md-12 col-xs-12">
-          <div class="infiny-faqs-title">
-            <h2 class="infiny-faqs-heading">Preguntas Frecuentes</h2>
-          </div>
+        <div class="col-lg-6 col-sm-12 infiny-faqs-title">
+          <h2 class="infiny-faqs-heading">Preguntas Frecuentes</h2>
         </div>
           <div class="container">
-            <div class="row justify-content-center faqs-wrapper">
-
-              <div class="col-md-6 col-sm-12">
+            <div class="row faqs-wrapper">
+              <div class="col-lg-6 col-sm-12">
+                
                 <div class="infiny-faq-container">
                   <i class="fas fa-receipt infiny-icon"></i>
                   <h5 class="infiny-faq-question">¿Cómo puedo aplicar para los proyectos de Infiny?</h5>
@@ -271,7 +254,7 @@
                 </div>
               </div>
   
-              <div class="col-md-6 col-sm-12 px-5">
+              <div class="col-lg-6 col-sm-12">
   
                 <div class="infiny-faq-container">
                   <i class="fas fa-key infiny-icon"></i>
@@ -326,16 +309,14 @@
         </div>
       </div>
 
-      <div class="infiny-map">          
-        <div class="container text-center">
-          <div class="infiny-map-title">
-            <div class="container">
-              <h2 class="infiny-map-heading">Ubícanos</h2>
-              <p class="infiny-map-subheading">“Nuestras oficinas se encuentran localizadas en la torre
-                <br>Dosza, El Rosal, Av. Francisco de Miranda, Caracas.”</p>
-            </div>
+      <div class="infiny-map">     
+        <div class="row justify-content-center">
+          <div class="infiny-map-title text-center">
+            <h2 class="infiny-map-heading">Ubícanos</h2>
+            <p class="infiny-map-subheading">“Nuestras oficinas se encuentran localizadas en la torre
+            <br>Dosza, El Rosal, Av. Francisco de Miranda, Caracas.”</p>
           </div>
-        </div>
+        </div>     
 
 
         <div class="mapouter">
@@ -348,29 +329,46 @@
     </section>
 
     <footer class="infiny-footer">
-      <div class="footer-container">
-        <div class="col-md-4 text-center">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 col-sm-12">
+          <p class="footer-title">Redes sociales</p>
           <div class="row">
             <div class="social-media">
-              <a href="https://instagram.com/infiny.ve" class=instagram">
-                <span><i class="fab fa-instagram"></i></span> @infiny.ve
-              </a>
-              <a href="#" class="facebook">
-                <span><i class="fab fa-facebook"></i></span> Infiny Venezuela
-              </a>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="footer-links">
+                    <span><i class="fab fa-instagram"></i></span> @infiny.ve
+                  </a>
+                </li> 
+                <li>
+                  <a href="#" class="footer-links">
+                    <span><i class="fab fa-facebook"></i></span> Infiny Venezuela
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-4 text-center">
-          <div class="contact">
-            <p class="contact-title mb-3">Contáctanos</p>
-            <a class="contact-phone" href="tel:+582120005555"><i class="fas fa-phone-alt"></i> +58 212 000 5555</a>
-            <br>
-            <br>
-            <a class="contact-phone" href="tel:+584145550000"><i class="fab fa-whatsapp"></i> +58 212 555 0000</a>
+
+        <div class="col-lg-4 col-sm-12">
+          <p class="footer-title mb-3">Contáctanos</p>
+          <div class="row">
+            <div class="social-media">
+              <ul class="list-unstyled">
+                <li>
+                  <a class="footer-links" href="tel:+582120005555"><i class="fas fa-phone-alt"></i> +58 212 000 5555</a>
+                </li>
+                <li>
+                  <a class="footer-links" href="tel:+584145550000"><i class="fab fa-whatsapp"></i> +58 212 555 0000</a>
+                </li>
+              </ul>
+            </div>
           </div>
+          
         </div>
-        <div class="col-md-4">
+
+        <div class="col-lg-4 col-sm-12">
           <p class="form">Recibe información importante para tu<br> 
           proceso de compra de vivienda nueva</p>
           
