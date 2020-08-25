@@ -2,14 +2,13 @@
 ///////  * INFINY STYLES * ////////
 ///////  *               * ////////
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,700,800,900&display=swap");
-
 @import "../vendor/bootstrap/bootstrap.scss";
 @import "../vendor/font-awesome/fontawesome-free/scss/fontawesome.scss";
 @import "../vendor/font-awesome/fontawesome-free/scss/regular.scss";
 @import "../vendor/font-awesome/fontawesome-free/scss/solid.scss";
 @import "../vendor/font-awesome/fontawesome-free/scss/brands.scss";
 
+@import "fonts";
 @import "variables";
 @import "global";
 @import "header";
